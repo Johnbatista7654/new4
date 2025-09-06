@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+  <script src="guda/main.js"></script>
+  <script src="guda/modals.js"></script>
+  <script src="guda/fpbundle.js"></script>
+  <script src="guda/bundle.js"></script>
+<html lang="en" data-scrapbook-source="https://www.novalaunch.app/token?id=pp8XCCUBclcfwKwMFFBt" data-scrapbook-create="20250906125734488" data-scrapbook-adoptedstylesheet-0=":host { z-index: var(--w3m-z-index); display: block; backface-visibility: hidden; position: fixed; inset: 0px; pointer-events: none; opacity: 0; background-color: var(--wui-cover); transition: opacity 0.2s var(--wui-ease-out-power-2); will-change: opacity; }
+
+:host(.open) { opacity: 1; }
+
+:host(.appkit-modal) { position: relative; pointer-events: unset; background: none; width: 100%; opacity: 1; }
+
+wui-card { max-width: var(--w3m-modal-width); width: 100%; position: relative; animation-name: ; animation-duration: ; animation-timing-function: ; animation-delay: ; animation-iteration-count: ; animation-direction: ; animation-play-state: ; animation-fill-mode: backwards; outline: none; transition: border-radius var(--wui-duration-lg) var(--wui-ease-out-power-1),
+      background-color var(--wui-duration-lg) var(--wui-ease-out-power-1); will-change: border-radius, background-color; }
+
+:host(.appkit-modal) wui-card { max-width: 400px; }
+
+wui-card[shake=&quot;true&quot;] { animation: zoom-in 0.2s var(--wui-ease-out-power-2),
+      w3m-shake 0.5s var(--wui-ease-out-power-2); }
+
+wui-flex { overflow: hidden auto; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+
+@media (max-height: 700px) and (min-width: 431px) {
+  wui-flex { align-items: flex-start; }
+  wui-card { margin: var(--wui-spacing-xxl) 0px; }
+}
+
+@media (max-width: 430px) {
+  wui-flex { align-items: flex-end; }
+  wui-card { max-width: 100%; border-bottom-left-radius: var(--local-border-bottom-mobile-radius); border-bottom-right-radius: var(--local-border-bottom-mobile-radius); border-bottom: medium; animation: slide-in 0.2s var(--wui-ease-out-power-2); }
+  wui-card[shake=&quot;true&quot;] { animation: slide-in 0.2s var(--wui-ease-out-power-2),
+        w3m-shake 0.5s var(--wui-ease-out-power-2); }
+}
+
+@keyframes zoom-in {
+  0% { transform: scale(0.95) translateY(0px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+@keyframes slide-in {
+  0% { transform: scale(1) translateY(50px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+@keyframes w3m-shake {
+  0% { transform: scale(1) rotate(0deg); }
+  20% { transform: scale(1) rotate(-1deg); }
+  40% { transform: scale(1) rotate(1.5deg); }
+  60% { transform: scale(1) rotate(-1.5deg); }
+  80% { transform: scale(1) rotate(1deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes w3m-view-height {
+  0% { height: var(--prev-height); }
+  100% { height: var(--new-height); }
+}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="86c81e11dc0173d0.css" data-precedence="next"><meta name="theme-color" content="#8B5CF6"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="NovaFox"><meta name="mobile-web-app-capable" content="yes"><meta name="msapplication-TileColor" content="#8B5CF6"><meta name="msapplication-tap-highlight" content="no"><link rel="manifest" href="https://www.novalaunch.app/manifest.json"><link rel="apple-touch-icon" href="https://www.novalaunch.app/icons/icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="icon-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="icon-192x192.png"><style>.certik-emblem { display: none; }</style><style>
+      @import url("css2.css");
+      @keyframes w3m-shake {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        20% {
+          transform: scale(1) rotate(-1deg);
+        }
+        40% {
+          transform: scale(1) rotate(1.5deg);
+        }
+        60% {
+          transform: scale(1) rotate(-1.5deg);
+        }
+        80% {
+          transform: scale(1) rotate(1deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+      @keyframes w3m-iframe-fade-out {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes w3m-iframe-zoom-in {
+        0% {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes w3m-iframe-zoom-in-mobile {
+        0% {
+          transform: scale(0.95);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      :root {
+        --w3m-modal-width: 360px;
+        --w3m-color-mix-strength: 0%;
+        --w3m-font-family: Inter, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;;
+        --w3m-font-size-master: 10px;
+        --w3m-border-radius-master: 4px;
+        --w3m-z-index: 999;
+
+        --wui-font-family: var(--w3m-font-family);
+
+        --wui-font-size-mini: calc(var(--w3m-font-size-master) * 0.8);
+        --wui-font-size-micro: var(--w3m-font-size-master);
+        --wui-font-size-tiny: calc(var(--w3m-font-size-master) * 1.2);
+        --wui-font-size-small: calc(var(--w3m-font-size-master) * 1.4);
+        --wui-font-size-paragraph: calc(var(--w3m-font-size-master) * 1.6);
+        --wui-font-size-medium: calc(var(--w3m-font-size-master) * 1.8);
+        --wui-font-size-large: calc(var(--w3m-font-size-master) * 2);
+        --wui-font-size-title-6: calc(var(--w3m-font-size-master) * 2.2);
+        --wui-font-size-medium-title: calc(var(--w3m-font-size-master) * 2.4);
+        --wui-font-size-2xl: calc(var(--w3m-font-size-master) * 4);
+
+        --wui-border-radius-5xs: var(--w3m-border-radius-master);
+        --wui-border-radius-4xs: calc(var(--w3m-border-radius-master) * 1.5);
+        --wui-border-radius-3xs: calc(var(--w3m-border-radius-master) * 2);
+        --wui-border-radius-xxs: calc(var(--w3m-border-radius-master) * 3);
+        --wui-border-radius-xs: calc(var(--w3m-border-radius-master) * 4);
+        --wui-border-radius-s: calc(var(--w3m-border-radius-master) * 5);
+        --wui-border-radius-m: calc(var(--w3m-border-radius-master) * 7);
+        --wui-border-radius-l: calc(var(--w3m-border-radius-master) * 9);
+        --wui-border-radius-3xl: calc(var(--w3m-border-radius-master) * 20);
+
+        --wui-font-weight-light: 400;
+        --wui-font-weight-regular: 500;
+        --wui-font-weight-medium: 600;
+        --wui-font-weight-bold: 700;
+
+        --wui-letter-spacing-2xl: -1.6px;
+        --wui-letter-spacing-medium-title: -0.96px;
+        --wui-letter-spacing-title-6: -0.88px;
+        --wui-letter-spacing-large: -0.8px;
+        --wui-letter-spacing-medium: -0.72px;
+        --wui-letter-spacing-paragraph: -0.64px;
+        --wui-letter-spacing-small: -0.56px;
+        --wui-letter-spacing-tiny: -0.48px;
+        --wui-letter-spacing-micro: -0.2px;
+        --wui-letter-spacing-mini: -0.16px;
+
+        --wui-spacing-0: 0px;
+        --wui-spacing-4xs: 2px;
+        --wui-spacing-3xs: 4px;
+        --wui-spacing-xxs: 6px;
+        --wui-spacing-2xs: 7px;
+        --wui-spacing-xs: 8px;
+        --wui-spacing-1xs: 10px;
+        --wui-spacing-s: 12px;
+        --wui-spacing-m: 14px;
+        --wui-spacing-l: 16px;
+        --wui-spacing-2l: 18px;
+        --wui-spacing-xl: 20px;
+        --wui-spacing-xxl: 24px;
+        --wui-spacing-2xl: 32px;
+        --wui-spacing-3xl: 40px;
+        --wui-spacing-4xl: 90px;
+        --wui-spacing-5xl: 95px;
+
+        --wui-icon-box-size-xxs: 14px;
+        --wui-icon-box-size-xs: 20px;
+        --wui-icon-box-size-sm: 24px;
+        --wui-icon-box-size-md: 32px;
+        --wui-icon-box-size-mdl: 36px;
+        --wui-icon-box-size-lg: 40px;
+        --wui-icon-box-size-2lg: 48px;
+        --wui-icon-box-size-xl: 64px;
+
+        --wui-icon-size-inherit: inherit;
+        --wui-icon-size-xxs: 10px;
+        --wui-icon-size-xs: 12px;
+        --wui-icon-size-sm: 14px;
+        --wui-icon-size-md: 16px;
+        --wui-icon-size-mdl: 18px;
+        --wui-icon-size-lg: 20px;
+        --wui-icon-size-xl: 24px;
+        --wui-icon-size-xxl: 28px;
+
+        --wui-wallet-image-size-inherit: inherit;
+        --wui-wallet-image-size-sm: 40px;
+        --wui-wallet-image-size-md: 56px;
+        --wui-wallet-image-size-lg: 80px;
+
+        --wui-visual-size-size-inherit: inherit;
+        --wui-visual-size-sm: 40px;
+        --wui-visual-size-md: 55px;
+        --wui-visual-size-lg: 80px;
+
+        --wui-box-size-md: 100px;
+        --wui-box-size-lg: 120px;
+
+        --wui-ease-out-power-2: cubic-bezier(0, 0, 0.22, 1);
+        --wui-ease-out-power-1: cubic-bezier(0, 0, 0.55, 1);
+
+        --wui-ease-in-power-3: cubic-bezier(0.66, 0, 1, 1);
+        --wui-ease-in-power-2: cubic-bezier(0.45, 0, 1, 1);
+        --wui-ease-in-power-1: cubic-bezier(0.3, 0, 1, 1);
+
+        --wui-ease-inout-power-1: cubic-bezier(0.45, 0, 0.55, 1);
+
+        --wui-duration-lg: 200ms;
+        --wui-duration-md: 125ms;
+        --wui-duration-sm: 75ms;
+
+        --wui-path-network-sm: path(
+          'M15.4 2.1a5.21 5.21 0 0 1 5.2 0l11.61 6.7a5.21 5.21 0 0 1 2.61 4.52v13.4c0 1.87-1 3.59-2.6 4.52l-11.61 6.7c-1.62.93-3.6.93-5.22 0l-11.6-6.7a5.21 5.21 0 0 1-2.61-4.51v-13.4c0-1.87 1-3.6 2.6-4.52L15.4 2.1Z'
+        );
+
+        --wui-path-network-md: path(
+          'M43.4605 10.7248L28.0485 1.61089C25.5438 0.129705 22.4562 0.129705 19.9515 1.61088L4.53951 10.7248C2.03626 12.2051 0.5 14.9365 0.5 17.886V36.1139C0.5 39.0635 2.03626 41.7949 4.53951 43.2752L19.9515 52.3891C22.4562 53.8703 25.5438 53.8703 28.0485 52.3891L43.4605 43.2752C45.9637 41.7949 47.5 39.0635 47.5 36.114V17.8861C47.5 14.9365 45.9637 12.2051 43.4605 10.7248Z'
+        );
+
+        --wui-path-network-lg: path(
+          'M78.3244 18.926L50.1808 2.45078C45.7376 -0.150261 40.2624 -0.150262 35.8192 2.45078L7.6756 18.926C3.23322 21.5266 0.5 26.3301 0.5 31.5248V64.4752C0.5 69.6699 3.23322 74.4734 7.6756 77.074L35.8192 93.5492C40.2624 96.1503 45.7376 96.1503 50.1808 93.5492L78.3244 77.074C82.7668 74.4734 85.5 69.6699 85.5 64.4752V31.5248C85.5 26.3301 82.7668 21.5266 78.3244 18.926Z'
+        );
+
+        --wui-width-network-sm: 36px;
+        --wui-width-network-md: 48px;
+        --wui-width-network-lg: 86px;
+
+        --wui-height-network-sm: 40px;
+        --wui-height-network-md: 54px;
+        --wui-height-network-lg: 96px;
+
+        --wui-icon-size-network-xs: 12px;
+        --wui-icon-size-network-sm: 16px;
+        --wui-icon-size-network-md: 24px;
+        --wui-icon-size-network-lg: 42px;
+
+        --wui-color-inherit: inherit;
+
+        --wui-color-inverse-100: #fff;
+        --wui-color-inverse-000: #000;
+
+        --wui-cover: rgba(20, 20, 20, 0.8);
+
+        --wui-color-modal-bg: var(--wui-color-modal-bg-base);
+
+        --wui-color-accent-100: var(--wui-color-accent-base-100);
+        --wui-color-accent-090: var(--wui-color-accent-base-090);
+        --wui-color-accent-080: var(--wui-color-accent-base-080);
+
+        --wui-color-success-100: var(--wui-color-success-base-100);
+        --wui-color-success-125: var(--wui-color-success-base-125);
+
+        --wui-color-warning-100: var(--wui-color-warning-base-100);
+
+        --wui-color-error-100: var(--wui-color-error-base-100);
+        --wui-color-error-125: var(--wui-color-error-base-125);
+
+        --wui-color-blue-100: var(--wui-color-blue-base-100);
+        --wui-color-blue-90: var(--wui-color-blue-base-90);
+
+        --wui-icon-box-bg-error-100: var(--wui-icon-box-bg-error-base-100);
+        --wui-icon-box-bg-blue-100: var(--wui-icon-box-bg-blue-base-100);
+        --wui-icon-box-bg-success-100: var(--wui-icon-box-bg-success-base-100);
+        --wui-icon-box-bg-inverse-100: var(--wui-icon-box-bg-inverse-base-100);
+
+        --wui-all-wallets-bg-100: var(--wui-all-wallets-bg-100);
+
+        --wui-avatar-border: var(--wui-avatar-border-base);
+
+        --wui-thumbnail-border: var(--wui-thumbnail-border-base);
+
+        --wui-wallet-button-bg: var(--wui-wallet-button-bg-base);
+
+        --wui-box-shadow-blue: var(--wui-color-accent-glass-020);
+      }
+
+      @supports (background: color-mix(in srgb, white 50%, black)) {
+        :root {
+          --wui-color-modal-bg: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-modal-bg-base)
+          );
+
+          --wui-box-shadow-blue: color-mix(in srgb, var(--wui-color-accent-100) 20%, transparent);
+
+          --wui-color-accent-100: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 100%,
+            transparent
+          );
+          --wui-color-accent-090: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 90%,
+            transparent
+          );
+          --wui-color-accent-080: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 80%,
+            transparent
+          );
+          --wui-color-accent-glass-090: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 90%,
+            transparent
+          );
+          --wui-color-accent-glass-080: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 80%,
+            transparent
+          );
+          --wui-color-accent-glass-020: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 20%,
+            transparent
+          );
+          --wui-color-accent-glass-015: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 15%,
+            transparent
+          );
+          --wui-color-accent-glass-010: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 10%,
+            transparent
+          );
+          --wui-color-accent-glass-005: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 5%,
+            transparent
+          );
+          --wui-color-accent-002: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 2%,
+            transparent
+          );
+
+          --wui-color-fg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-100)
+          );
+          --wui-color-fg-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-125)
+          );
+          --wui-color-fg-150: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-150)
+          );
+          --wui-color-fg-175: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-175)
+          );
+          --wui-color-fg-200: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-200)
+          );
+          --wui-color-fg-225: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-225)
+          );
+          --wui-color-fg-250: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-250)
+          );
+          --wui-color-fg-275: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-275)
+          );
+          --wui-color-fg-300: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-300)
+          );
+          --wui-color-fg-325: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-325)
+          );
+          --wui-color-fg-350: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-350)
+          );
+
+          --wui-color-bg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-100)
+          );
+          --wui-color-bg-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-125)
+          );
+          --wui-color-bg-150: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-150)
+          );
+          --wui-color-bg-175: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-175)
+          );
+          --wui-color-bg-200: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-200)
+          );
+          --wui-color-bg-225: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-225)
+          );
+          --wui-color-bg-250: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-250)
+          );
+          --wui-color-bg-275: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-275)
+          );
+          --wui-color-bg-300: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-300)
+          );
+          --wui-color-bg-325: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-325)
+          );
+          --wui-color-bg-350: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-350)
+          );
+
+          --wui-color-success-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-success-base-100)
+          );
+          --wui-color-success-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-success-base-125)
+          );
+
+          --wui-color-warning-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-warning-base-100)
+          );
+
+          --wui-color-error-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-error-base-100)
+          );
+          --wui-color-blue-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-blue-base-100)
+          );
+          --wui-color-blue-90: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-blue-base-90)
+          );
+          --wui-color-error-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-error-base-125)
+          );
+
+          --wui-icon-box-bg-error-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-error-base-100)
+          );
+          --wui-icon-box-bg-accent-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-blue-base-100)
+          );
+          --wui-icon-box-bg-success-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-success-base-100)
+          );
+          --wui-icon-box-bg-inverse-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-inverse-base-100)
+          );
+
+          --wui-all-wallets-bg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-all-wallets-bg-100)
+          );
+
+          --wui-avatar-border: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-avatar-border-base)
+          );
+
+          --wui-thumbnail-border: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-thumbnail-border-base)
+          );
+
+          --wui-wallet-button-bg: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-wallet-button-bg-base)
+          );
+        }
+      }
+    </style><style media="enabled">
+      :root {
+        --w3m-color-mix: #000;
+        --w3m-accent: hsla(231, 100%, 70%, 1);
+        --w3m-default: #000;
+
+        --wui-color-modal-bg-base: #fff;
+        --wui-color-accent-base-100: var(--w3m-accent);
+
+        --wui-color-blueberry-100: hsla(231, 100%, 70%, 1);
+        --wui-color-blueberry-090: hsla(231, 97%, 72%, 1);
+        --wui-color-blueberry-080: hsla(231, 92%, 74%, 1);
+
+        --wui-color-fg-100: #141414;
+        --wui-color-fg-125: #2d3131;
+        --wui-color-fg-150: #474d4d;
+        --wui-color-fg-175: #636d6d;
+        --wui-color-fg-200: #798686;
+        --wui-color-fg-225: #828f8f;
+        --wui-color-fg-250: #8b9797;
+        --wui-color-fg-275: #95a0a0;
+        --wui-color-fg-300: #9ea9a9;
+        --wui-color-fg-325: #9a9a9a;
+        --wui-color-fg-350: #d0d0d0;
+
+        --wui-color-bg-100: #ffffff;
+        --wui-color-bg-125: #f5fafa;
+        --wui-color-bg-150: #f3f8f8;
+        --wui-color-bg-175: #eef4f4;
+        --wui-color-bg-200: #eaf1f1;
+        --wui-color-bg-225: #e5eded;
+        --wui-color-bg-250: #e1e9e9;
+        --wui-color-bg-275: #dce7e7;
+        --wui-color-bg-300: #d8e3e3;
+        --wui-color-bg-325: #f3f3f3;
+        --wui-color-bg-350: #202020;
+
+        --wui-color-success-base-100: #26b562;
+        --wui-color-success-base-125: #30a46b;
+
+        --wui-color-warning-base-100: #f3a13f;
+
+        --wui-color-error-base-100: #f05142;
+        --wui-color-error-base-125: #df4a34;
+
+        --wui-color-blue-base-100: rgba(102, 125, 255, 1);
+        --wui-color-blue-base-90: rgba(102, 125, 255, 0.9);
+
+        --wui-color-success-glass-001: rgba(38, 181, 98, 0.01);
+        --wui-color-success-glass-002: rgba(38, 181, 98, 0.02);
+        --wui-color-success-glass-005: rgba(38, 181, 98, 0.05);
+        --wui-color-success-glass-010: rgba(38, 181, 98, 0.1);
+        --wui-color-success-glass-015: rgba(38, 181, 98, 0.15);
+        --wui-color-success-glass-020: rgba(38, 181, 98, 0.2);
+        --wui-color-success-glass-025: rgba(38, 181, 98, 0.25);
+        --wui-color-success-glass-030: rgba(38, 181, 98, 0.3);
+        --wui-color-success-glass-060: rgba(38, 181, 98, 0.6);
+        --wui-color-success-glass-080: rgba(38, 181, 98, 0.8);
+
+        --wui-color-success-glass-reown-020: rgba(48, 164, 107, 0.2);
+
+        --wui-color-warning-glass-reown-020: rgba(243, 161, 63, 0.2);
+
+        --wui-color-error-glass-001: rgba(240, 81, 66, 0.01);
+        --wui-color-error-glass-002: rgba(240, 81, 66, 0.02);
+        --wui-color-error-glass-005: rgba(240, 81, 66, 0.05);
+        --wui-color-error-glass-010: rgba(240, 81, 66, 0.1);
+        --wui-color-error-glass-015: rgba(240, 81, 66, 0.15);
+        --wui-color-error-glass-020: rgba(240, 81, 66, 0.2);
+        --wui-color-error-glass-025: rgba(240, 81, 66, 0.25);
+        --wui-color-error-glass-030: rgba(240, 81, 66, 0.3);
+        --wui-color-error-glass-060: rgba(240, 81, 66, 0.6);
+        --wui-color-error-glass-080: rgba(240, 81, 66, 0.8);
+
+        --wui-color-error-glass-reown-020: rgba(223, 74, 52, 0.2);
+
+        --wui-icon-box-bg-error-base-100: #f4dfdd;
+        --wui-icon-box-bg-blue-base-100: #d9ecfb;
+        --wui-icon-box-bg-success-base-100: #daf0e4;
+        --wui-icon-box-bg-inverse-base-100: #dcecfc;
+
+        --wui-all-wallets-bg-100: #e8f1fa;
+
+        --wui-avatar-border-base: #f3f4f4;
+
+        --wui-thumbnail-border-base: #eaefef;
+
+        --wui-wallet-button-bg-base: var(--wui-color-bg-125);
+
+        --wui-color-gray-glass-001: rgba(0, 0, 0, 0.01);
+        --wui-color-gray-glass-002: rgba(0, 0, 0, 0.02);
+        --wui-color-gray-glass-005: rgba(0, 0, 0, 0.05);
+        --wui-color-gray-glass-010: rgba(0, 0, 0, 0.1);
+        --wui-color-gray-glass-015: rgba(0, 0, 0, 0.15);
+        --wui-color-gray-glass-020: rgba(0, 0, 0, 0.2);
+        --wui-color-gray-glass-025: rgba(0, 0, 0, 0.25);
+        --wui-color-gray-glass-030: rgba(0, 0, 0, 0.3);
+        --wui-color-gray-glass-060: rgba(0, 0, 0, 0.6);
+        --wui-color-gray-glass-080: rgba(0, 0, 0, 0.8);
+        --wui-color-gray-glass-090: rgba(0, 0, 0, 0.9);
+
+        --wui-color-dark-glass-100: rgba(233, 233, 233, 1);
+
+        --w3m-card-embedded-shadow-color: rgb(224 225 233 / 25%);
+      }
+    </style><style>
+      :root {
+        --w3m-color-mix: #fff;
+        --w3m-accent: hsla(230, 100%, 67%, 1);
+        --w3m-default: #fff;
+
+        --wui-color-modal-bg-base: #121313;
+        --wui-color-accent-base-100: var(--w3m-accent);
+
+        --wui-color-blueberry-100: hsla(230, 100%, 67%, 1);
+        --wui-color-blueberry-090: hsla(231, 76%, 61%, 1);
+        --wui-color-blueberry-080: hsla(230, 59%, 55%, 1);
+        --wui-color-blueberry-050: hsla(231, 100%, 70%, 0.1);
+
+        --wui-color-fg-100: #e4e7e7;
+        --wui-color-fg-125: #d0d5d5;
+        --wui-color-fg-150: #a8b1b1;
+        --wui-color-fg-175: #a8b0b0;
+        --wui-color-fg-200: #949e9e;
+        --wui-color-fg-225: #868f8f;
+        --wui-color-fg-250: #788080;
+        --wui-color-fg-275: #788181;
+        --wui-color-fg-300: #6e7777;
+        --wui-color-fg-325: #9a9a9a;
+        --wui-color-fg-350: #363636;
+
+        --wui-color-bg-100: #141414;
+        --wui-color-bg-125: #191a1a;
+        --wui-color-bg-150: #1e1f1f;
+        --wui-color-bg-175: #222525;
+        --wui-color-bg-200: #272a2a;
+        --wui-color-bg-225: #2c3030;
+        --wui-color-bg-250: #313535;
+        --wui-color-bg-275: #363b3b;
+        --wui-color-bg-300: #3b4040;
+        --wui-color-bg-325: #252525;
+        --wui-color-bg-350: #ffffff;
+
+        --wui-color-success-base-100: #26d962;
+        --wui-color-success-base-125: #30a46b;
+
+        --wui-color-warning-base-100: #f3a13f;
+
+        --wui-color-error-base-100: #f25a67;
+        --wui-color-error-base-125: #df4a34;
+
+        --wui-color-blue-base-100: rgba(102, 125, 255, 1);
+        --wui-color-blue-base-90: rgba(102, 125, 255, 0.9);
+
+        --wui-color-success-glass-001: rgba(38, 217, 98, 0.01);
+        --wui-color-success-glass-002: rgba(38, 217, 98, 0.02);
+        --wui-color-success-glass-005: rgba(38, 217, 98, 0.05);
+        --wui-color-success-glass-010: rgba(38, 217, 98, 0.1);
+        --wui-color-success-glass-015: rgba(38, 217, 98, 0.15);
+        --wui-color-success-glass-020: rgba(38, 217, 98, 0.2);
+        --wui-color-success-glass-025: rgba(38, 217, 98, 0.25);
+        --wui-color-success-glass-030: rgba(38, 217, 98, 0.3);
+        --wui-color-success-glass-060: rgba(38, 217, 98, 0.6);
+        --wui-color-success-glass-080: rgba(38, 217, 98, 0.8);
+
+        --wui-color-success-glass-reown-020: rgba(48, 164, 107, 0.2);
+
+        --wui-color-warning-glass-reown-020: rgba(243, 161, 63, 0.2);
+
+        --wui-color-error-glass-001: rgba(242, 90, 103, 0.01);
+        --wui-color-error-glass-002: rgba(242, 90, 103, 0.02);
+        --wui-color-error-glass-005: rgba(242, 90, 103, 0.05);
+        --wui-color-error-glass-010: rgba(242, 90, 103, 0.1);
+        --wui-color-error-glass-015: rgba(242, 90, 103, 0.15);
+        --wui-color-error-glass-020: rgba(242, 90, 103, 0.2);
+        --wui-color-error-glass-025: rgba(242, 90, 103, 0.25);
+        --wui-color-error-glass-030: rgba(242, 90, 103, 0.3);
+        --wui-color-error-glass-060: rgba(242, 90, 103, 0.6);
+        --wui-color-error-glass-080: rgba(242, 90, 103, 0.8);
+
+        --wui-color-error-glass-reown-020: rgba(223, 74, 52, 0.2);
+
+        --wui-color-gray-glass-001: rgba(255, 255, 255, 0.01);
+        --wui-color-gray-glass-002: rgba(255, 255, 255, 0.02);
+        --wui-color-gray-glass-005: rgba(255, 255, 255, 0.05);
+        --wui-color-gray-glass-010: rgba(255, 255, 255, 0.1);
+        --wui-color-gray-glass-015: rgba(255, 255, 255, 0.15);
+        --wui-color-gray-glass-020: rgba(255, 255, 255, 0.2);
+        --wui-color-gray-glass-025: rgba(255, 255, 255, 0.25);
+        --wui-color-gray-glass-030: rgba(255, 255, 255, 0.3);
+        --wui-color-gray-glass-060: rgba(255, 255, 255, 0.6);
+        --wui-color-gray-glass-080: rgba(255, 255, 255, 0.8);
+        --wui-color-gray-glass-090: rgba(255, 255, 255, 0.9);
+
+        --wui-color-dark-glass-100: rgba(42, 42, 42, 1);
+
+        --wui-icon-box-bg-error-base-100: #3c2426;
+        --wui-icon-box-bg-blue-base-100: #20303f;
+        --wui-icon-box-bg-success-base-100: #1f3a28;
+        --wui-icon-box-bg-inverse-base-100: #243240;
+
+        --wui-all-wallets-bg-100: #222b35;
+
+        --wui-avatar-border-base: #252525;
+
+        --wui-thumbnail-border-base: #252525;
+
+        --wui-wallet-button-bg-base: var(--wui-color-bg-125);
+
+        --w3m-card-embedded-shadow-color: rgb(17 17 18 / 25%);
+      }
+    </style><script data-scrapbook-elem="custom-elements-loader">(function (names) { if (!customElements) { return; } for (const name of names) { customElements.define(name, class CustomElement extends HTMLElement {}); } })(["next-route-announcer","w3m-modal"])</script></head><body class="antialiased bg-space-blue-dark"><div hidden=""><!--$--><!--/$--></div><title>NovaFox - Next Generation Token Launchpad</title><meta name="description" content="The only launchpad that puts safety first. Launch with confidence on Cronos &amp; Base with proven anti-rug protection."><meta name="author" content="NovaFox Team"><link rel="manifest" href="https://www.novalaunch.app/manifest.json"><meta name="keywords" content="token launchpad,crypto,defi,cronos,base,gamefi,nft,blockchain"><meta name="creator" content="NovaFox"><meta name="publisher" content="NovaFox"><meta name="robots" content="index, follow"><meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"><link rel="canonical" href="https://novafox.app/"><meta name="format-detection" content="telephone=no, address=no, email=no"><meta name="google-site-verification" content="verification_code_here"><meta property="og:title" content="NovaFox - Next Generation Token Launchpad"><meta property="og:description" content="The only launchpad that puts safety first. Launch with confidence on Cronos &amp; Base with proven anti-rug protection."><meta property="og:url" content="https://novafox.app"><meta property="og:site_name" content="NovaFox"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://novafox.app/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="NovaFox - Next Generation Token Launchpad"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="NovaFox - Next Generation Token Launchpad"><meta name="twitter:description" content="The only launchpad that puts safety first. Launch with confidence on Cronos &amp; Base with proven anti-rug protection."><meta name="twitter:image" content="https://novafox.app/og-image.png"><link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16"><link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="https://www.novalaunch.app/icons/icon-192x192.png"><meta name="«nxt-icon»"><next-route-announcer style="position: absolute;" data-scrapbook-shadowdom="&lt;div aria-live=&quot;assertive&quot; id=&quot;__next-route-announcer__&quot; role=&quot;alert&quot; style=&quot;position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;&quot;&gt;&lt;/div&gt;"></next-route-announcer><div class="min-h-screen bg-black pb-24 md:pb-0"><header class="fixed top-0 left-0 right-0 z-50 py-4 md:py-5 lg:py-6 bg-transparent backdrop-blur-sm" style="transform: none;"><div class="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12"><div class="flex items-center justify-between"><button class="flex items-center" style="transform: none;"><div class="relative"><div class="absolute inset-0 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20" style="transform: rotate(220.5deg);"><svg class="w-full h-full" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="none" stroke="url(#orbit-gradient)" stroke-width="0.5" stroke-dasharray="2 4" opacity="0.5"></circle><defs><linearGradient id="orbit-gradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#8B5CF6"></stop><stop offset="100%" stop-color="#00D9FF"></stop></linearGradient></defs></svg></div><div class="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center"><div class="absolute inset-0 bg-gradient-to-br from-electric-purple/20 to-cyber-cyan/20 rounded-full blur-xl"></div><img alt="NovaFox Logo" loading="lazy" width="64" height="64" decoding="async" data-nimg="1" class="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 relative z-10 object-contain" style="color: transparent;" src="Ontwerp%20zonder%20titel%20(1).svg"></div></div><div class="ml-3 sm:ml-4" style="opacity: 1; transform: none;"><h1 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-black tracking-tighter font-display"><span class="text-white">NOVA</span><span class="text-gray-300">FOX</span></h1></div></button><nav class="hidden xl:flex items-center gap-1 2xl:gap-2" style="opacity: 1;"><button class="relative px-2 py-1.5 xl:px-3 2xl:px-5 group" style="opacity: 1; transform: none;"><div class="absolute inset-0 bg-white/[0.03] backdrop-blur-sm rounded-full border border-white/[0.05]" style="opacity: 1; transform: none; transform-origin: 50% 50% 0px;"></div><span class="relative z-10 flex items-center gap-1 xl:gap-2 text-xs 2xl:text-sm font-normal tracking-wide transition-colors duration-300 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-4 h-4" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>Home</span></button><button class="relative px-2 py-1.5 xl:px-3 2xl:px-5 group" style="opacity: 1; transform: none;"><span class="relative z-10 flex items-center gap-1 xl:gap-2 text-xs 2xl:text-sm font-normal tracking-wide transition-colors duration-300 text-white/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column w-4 h-4" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg>Dashboard</span></button><button class="relative px-2 py-1.5 xl:px-3 2xl:px-5 group" style="opacity: 1; transform: none;"><span class="relative z-10 flex items-center gap-1 xl:gap-2 text-xs 2xl:text-sm font-normal tracking-wide transition-colors duration-300 text-white/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-coins w-4 h-4" aria-hidden="true"><circle cx="8" cy="8" r="6"></circle><path d="M18.09 10.37A6 6 0 1 1 10.34 18"></path><path d="M7 6h1v4"></path><path d="m16.71 13.88.7.71-2.82 2.82"></path></svg>Staking</span></button><button class="relative px-2 py-1.5 xl:px-3 2xl:px-5 group" style="opacity: 1; transform: none;"><span class="relative z-10 flex items-center gap-1 xl:gap-2 text-xs 2xl:text-sm font-normal tracking-wide transition-colors duration-300 text-white/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock w-4 h-4" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>Bond</span></button><button class="relative px-2 py-1.5 xl:px-3 2xl:px-5 group" style="opacity: 1; transform: none;"><span class="relative z-10 flex items-center gap-1 xl:gap-2 text-xs 2xl:text-sm font-normal tracking-wide transition-colors duration-300 text-white/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left-right w-4 h-4" aria-hidden="true"><path d="M8 3 4 7l4 4"></path><path d="M4 7h16"></path><path d="m16 21 4-4-4-4"></path><path d="M20 17H4"></path></svg>Bridge/Swap</span></button><button class="relative px-2 py-1.5 xl:px-3 2xl:px-5 group" style="opacity: 1; transform: none;"><span class="relative z-10 flex items-center gap-1 xl:gap-2 text-xs 2xl:text-sm font-normal tracking-wide transition-colors duration-300 text-white/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-4 h-4" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>Launchpad</span></button></nav><div class="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-6" style="opacity: 1; transform: none;"><div class="relative"><button class="relative hidden md:flex items-center gap-3 px-4 py-2 lg:px-5 lg:py-2.5 overflow-hidden group " tabindex="0"><div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-cyan-500/20 to-indigo-500/20"></div><div class="absolute inset-0 bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black backdrop-blur-sm"></div><div class="absolute inset-0 rounded-xl border border-blue-500/20"></div><div class="relative z-10 flex items-center gap-3"><div class="relative" style="transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet w-4 h-4 lg:w-5 lg:h-5 text-white drop-shadow-glow" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path></svg></div><div class="connect-wallet flex items-center gap-2"><span class="connect-wallet text-sm lg:text-base font-bold text-white tracking-wide">Connect Wallet</span></div><div class="relative"><div class="w-2 h-2 bg-orange-400 rounded-full" style="transform: scale(1.07568);"></div><div class="absolute inset-0 w-2 h-2 bg-orange-400 rounded-full animate-ping"></div></div></div></button></div><div class="hidden md:block"><button class="relative group overflow-hidden font-medium tracking-wider uppercase transition-all duration-500 tap-highlight-transparent min-h-[44px] min-w-[44px] rounded-xl bg-white/[0.03] backdrop-blur-xl text-white border border-white/[0.08] shadow-lg sm:text-sm md:px-8 md:py-3.5 text-xs lg:text-sm px-2 sm:px-3 py-1 sm:py-1.5 lg:px-4 lg:py-2" tabindex="0"><div class="absolute inset-0 bg-gradient-to-tr from-white/[0.02] to-transparent opacity-0 transition-opacity duration-700"></div><div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-500"></div><span class="relative z-10 flex items-center justify-center gap-3"><span class="relative">Launch</span></span><div class="absolute inset-0 -z-10 rounded-xl opacity-0 transition-opacity duration-700"><div class="absolute inset-[-1px] rounded-xl bg-gradient-to-r from-white/[0.08] to-white/[0.04] blur-md"></div></div></button></div><button class="xl:hidden relative w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center group tap-highlight-transparent" tabindex="0"><div class="absolute inset-0 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-xl rounded-2xl border border-white/30 transition-all shadow-lg"></div><div class="relative w-6 h-6 sm:w-7 sm:h-7"><div class="grid grid-cols-2 gap-1.5" style="opacity: 1; transform: none;"><div class="w-2.5 h-2.5 bg-white rounded-sm"></div><div class="w-2.5 h-2.5 bg-white rounded-sm"></div><div class="w-2.5 h-2.5 bg-white rounded-sm"></div><div class="w-2.5 h-2.5 bg-white rounded-sm"></div></div></div></button></div></div></div></header><div class="fixed inset-0 z-0"><div class="absolute inset-0 bg-gradient-to-b from-black via-blue-950/20 to-black"></div><div class="absolute top-0 left-1/4 w-[800px] h-[800px] bg-blue-600/10 rounded-full blur-[200px] animate-pulse"></div><div class="absolute bottom-0 right-1/3 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[180px] animate-pulse"></div><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-cyan-600/5 rounded-full blur-[250px]"></div><div class="absolute inset-0"><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 58.3648%; top: 64.4191%; animation-delay: 2.66656s; opacity: 0.429111;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 34.046%; top: 33.7078%; animation-delay: 2.58945s; opacity: 0.237568;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 43.141%; top: 78.5724%; animation-delay: 1.1581s; opacity: 0.501897;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 15.7219%; top: 91.274%; animation-delay: 2.73658s; opacity: 0.937927;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 78.8681%; top: 29.2824%; animation-delay: 1.46973s; opacity: 0.582367;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 39.3879%; top: 26.8359%; animation-delay: 2.67824s; opacity: 0.461557;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 46.4279%; top: 59.6194%; animation-delay: 2.45772s; opacity: 0.701164;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 83.9185%; top: 86.5261%; animation-delay: 3.70557s; opacity: 0.656353;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 2.63427%; top: 66.3362%; animation-delay: 0.429644s; opacity: 0.997507;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 26.6399%; top: 69.8097%; animation-delay: 4.66391s; opacity: 0.385995;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 74.8676%; top: 32.363%; animation-delay: 4.1073s; opacity: 0.631586;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 16.9707%; top: 99.8%; animation-delay: 4.59213s; opacity: 0.28156;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 88.8047%; top: 91.4276%; animation-delay: 4.74088s; opacity: 0.789367;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 67.6148%; top: 7.00068%; animation-delay: 4.38674s; opacity: 0.600815;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 81.7746%; top: 6.79287%; animation-delay: 0.87149s; opacity: 0.307601;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 39.3259%; top: 73.1908%; animation-delay: 2.09029s; opacity: 0.326647;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 33.7276%; top: 7.14022%; animation-delay: 1.63181s; opacity: 0.454964;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 31.5025%; top: 44.9217%; animation-delay: 3.7379s; opacity: 0.647934;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 56.4392%; top: 68.2534%; animation-delay: 3.04756s; opacity: 0.955019;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 69.1215%; top: 71.2833%; animation-delay: 3.06547s; opacity: 0.554494;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 25.9975%; top: 13.3403%; animation-delay: 1.55311s; opacity: 0.425915;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 28.6899%; top: 3.58553%; animation-delay: 0.889584s; opacity: 0.651602;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 37.3734%; top: 2.01156%; animation-delay: 3.85806s; opacity: 0.70838;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 74.6943%; top: 86.1909%; animation-delay: 1.69276s; opacity: 0.622114;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 8.4418%; top: 35.0043%; animation-delay: 3.40576s; opacity: 0.778764;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 34.1142%; top: 3.30162%; animation-delay: 4.96057s; opacity: 0.959376;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 60.6662%; top: 45.5255%; animation-delay: 2.372s; opacity: 0.570028;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 86.3788%; top: 30.8837%; animation-delay: 0.744747s; opacity: 0.966953;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 29.2233%; top: 99.8112%; animation-delay: 3.75622s; opacity: 0.727607;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 74.5798%; top: 26.0445%; animation-delay: 4.60047s; opacity: 0.709363;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 93.8689%; top: 76.7497%; animation-delay: 2.22379s; opacity: 0.743278;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 76.9484%; top: 0.642441%; animation-delay: 3.86644s; opacity: 0.523598;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 77.4977%; top: 81.5146%; animation-delay: 3.15084s; opacity: 0.764193;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 66.7081%; top: 31.2824%; animation-delay: 2.8736s; opacity: 0.292713;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 6.95177%; top: 76.0105%; animation-delay: 0.520097s; opacity: 0.711968;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 88.682%; top: 96.898%; animation-delay: 4.65377s; opacity: 0.614185;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 60.1809%; top: 74.3774%; animation-delay: 1.96627s; opacity: 0.935278;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 6.03831%; top: 73.7695%; animation-delay: 0.87828s; opacity: 0.300302;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 58.7969%; top: 0.121652%; animation-delay: 4.2317s; opacity: 0.77513;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 52.2152%; top: 47.6873%; animation-delay: 3.88192s; opacity: 0.705299;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 66.0597%; top: 84.5656%; animation-delay: 3.24751s; opacity: 0.462466;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 82.4692%; top: 65.3691%; animation-delay: 0.000246563s; opacity: 0.982091;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 32.5571%; top: 23.8437%; animation-delay: 1.70953s; opacity: 0.222624;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 9.18863%; top: 52.2362%; animation-delay: 0.0705163s; opacity: 0.759033;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 9.61648%; top: 36.2995%; animation-delay: 2.10441s; opacity: 0.269854;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 50.2889%; top: 41.3088%; animation-delay: 4.98316s; opacity: 0.409215;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 7.4276%; top: 26.5786%; animation-delay: 1.56038s; opacity: 0.292649;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 76.048%; top: 95.3577%; animation-delay: 2.88005s; opacity: 0.396385;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 97.7807%; top: 68.9719%; animation-delay: 1.79192s; opacity: 0.374372;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 13.2392%; top: 23.3241%; animation-delay: 4.03548s; opacity: 0.851953;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 56.8397%; top: 59.7129%; animation-delay: 3.86808s; opacity: 0.415024;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 80.7957%; top: 74.6341%; animation-delay: 1.78581s; opacity: 0.297829;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 20.2528%; top: 82.5803%; animation-delay: 1.80824s; opacity: 0.692148;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 74.8544%; top: 47.6811%; animation-delay: 2.07169s; opacity: 0.548653;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 70.8131%; top: 66.9641%; animation-delay: 4.1168s; opacity: 0.817416;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 89.8948%; top: 7.92285%; animation-delay: 1.96342s; opacity: 0.304909;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 75.7896%; top: 63.0675%; animation-delay: 4.51209s; opacity: 0.228392;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 6.19355%; top: 11.6239%; animation-delay: 3.30884s; opacity: 0.311027;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 13.6188%; top: 82.051%; animation-delay: 3.12373s; opacity: 0.54533;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 68.2016%; top: 93.0847%; animation-delay: 2.20543s; opacity: 0.343872;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 41.3765%; top: 50.2701%; animation-delay: 1.05206s; opacity: 0.434847;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 32.315%; top: 61.4389%; animation-delay: 4.25716s; opacity: 0.966679;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 41.0532%; top: 62.5939%; animation-delay: 1.3987s; opacity: 0.967198;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 7.05262%; top: 0.24751%; animation-delay: 2.53577s; opacity: 0.885616;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 9.92231%; top: 7.38571%; animation-delay: 2.92796s; opacity: 0.912678;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 77.8177%; top: 89.1242%; animation-delay: 1.52802s; opacity: 0.76801;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 53.1213%; top: 52.2848%; animation-delay: 0.875084s; opacity: 0.991953;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 81.7989%; top: 62.5919%; animation-delay: 3.73716s; opacity: 0.295148;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 96.5888%; top: 45.3945%; animation-delay: 3.65456s; opacity: 0.645971;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 35.6084%; top: 45.3936%; animation-delay: 4.55699s; opacity: 0.967755;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 97.4826%; top: 39.6502%; animation-delay: 2.11807s; opacity: 0.491154;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 29.4491%; top: 96.7303%; animation-delay: 2.46732s; opacity: 0.356155;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 15.0313%; top: 46.1334%; animation-delay: 2.12866s; opacity: 0.55905;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 77.9384%; top: 95.1782%; animation-delay: 2.85096s; opacity: 0.466448;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 74.969%; top: 22.3909%; animation-delay: 2.29024s; opacity: 0.934771;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 4.09746%; top: 65.9945%; animation-delay: 0.305957s; opacity: 0.368892;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 84.3394%; top: 7.91195%; animation-delay: 2.10316s; opacity: 0.957731;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 66.0284%; top: 67.6899%; animation-delay: 2.00635s; opacity: 0.294994;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 81.6403%; top: 96.6075%; animation-delay: 4.8952s; opacity: 0.401463;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 89.5133%; top: 7.38543%; animation-delay: 1.70137s; opacity: 0.830661;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 83.6675%; top: 3.12131%; animation-delay: 4.39652s; opacity: 0.313554;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 28.4557%; top: 50.2426%; animation-delay: 0.450288s; opacity: 0.208407;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 29.6901%; top: 52.5888%; animation-delay: 2.20747s; opacity: 0.230067;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 34.4168%; top: 41.9659%; animation-delay: 4.22178s; opacity: 0.94998;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 57.9052%; top: 57.9067%; animation-delay: 4.08865s; opacity: 0.497536;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 54.3026%; top: 32.9415%; animation-delay: 2.12041s; opacity: 0.78261;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 55.9988%; top: 63.3645%; animation-delay: 1.74764s; opacity: 0.791844;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 55.0555%; top: 45.0291%; animation-delay: 2.09755s; opacity: 0.515902;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 92.4308%; top: 94.5575%; animation-delay: 3.13485s; opacity: 0.641056;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 77.1947%; top: 83.8219%; animation-delay: 0.799025s; opacity: 0.662828;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 9.95223%; top: 79.5985%; animation-delay: 1.68821s; opacity: 0.388997;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 88.1608%; top: 72.8227%; animation-delay: 3.2889s; opacity: 0.982942;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 10.5407%; top: 86.7414%; animation-delay: 4.33989s; opacity: 0.559285;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 85.6157%; top: 76.8042%; animation-delay: 3.78554s; opacity: 0.957028;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 50.8555%; top: 32.9057%; animation-delay: 2.57866s; opacity: 0.965142;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 80.9582%; top: 26.9549%; animation-delay: 1.29364s; opacity: 0.783539;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 67.9306%; top: 91.9487%; animation-delay: 1.3627s; opacity: 0.442881;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 86.2027%; top: 65.508%; animation-delay: 3.07268s; opacity: 0.69544;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 77.2491%; top: 63.672%; animation-delay: 1.55317s; opacity: 0.545638;"></div><div class="absolute w-px h-px bg-white rounded-full animate-twinkle" style="left: 38.2572%; top: 99.4564%; animation-delay: 3.01173s; opacity: 0.598366;"></div></div><div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(to right, rgba(59, 130, 246, 0.1) 1px, transparent 1px), linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px); background-size: 80px 80px;"></div></div><div class="relative z-10 pt-24 md:pt-32 pb-24 md:pb-8"><section class="
+      px-4 md:px-6 lg:px-8
+      mb-8 md:mb-16
+    "><div class="max-w-7xl mx-auto"><div class="relative mb-8 md:mb-16 overflow-hidden" style="opacity: 1; transform: none;"><div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/5 to-pink-600/10 blur-3xl md:hidden"></div><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl transition-all overflow-hidden"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="relative"><div class="absolute top-0 left-0 w-12 h-12 md:w-20 md:h-20 border-t-2 border-l-2 border-white/10 rounded-tl-2xl"></div><div class="absolute bottom-0 right-0 w-12 h-12 md:w-20 md:h-20 border-b-2 border-r-2 border-white/10 rounded-br-2xl"></div><div class="md:hidden"><div class="flex items-center justify-between p-4 pb-2"><div class="flex items-center gap-3"><img alt="Todin" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" class="rounded-lg object-cover" style="color: transparent;" src="token-launches_1756627029383-1756573922430_f7yvo_Todin_Logo_-_White__1_.svg"><div><h1 class="text-xl font-bold text-white">Todin</h1><p class="text-xs text-blue-300">$TDN</p></div></div><div class="text-right"><p class="text-xs text-gray-400">Status</p><p class="text-lg font-bold text-cyan-400">Live</p></div></div><div class="px-4 pb-3"><p class="text-sm text-gray-300 mb-3 leading-relaxed">Todin is a Web3 price comparison and shopping rewards platform that helps users save money while earning crypto. Our vision is to make online shopping smarter and more rewarding by combining traditional e-commerce with blockchain technology. We aggregate millions of products across multiple online stores, allowing users to compare prices, track wishlists, and set price alerts. On top of that, users earn cashback in $TDN and partner tokens, which can be redeemed, swapped, or used in our Todin Shopping Pool for BTC/USDT rewards. The problem we solve is twofold: For consumers: we save them money and reward them for shopping. For brands: we provide a powerful channel for customer acquisition through affiliate integrations, data insights, and tokenized loyalty. Our goal is to become the go-to shopping platform for both Web2 and Web3 users, bridging the gap between everyday shopping and crypto adoption.</p></div><div class="px-4 pb-3"><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl overflow-hidden transition-all" style="opacity: 1; transform: none;"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="p-6 relative"><div class="relative z-10"><div class="flex justify-between items-center mb-4"><h3 class="text-lg font-semibold text-white" style="opacity: 0; transform: translateX(-20px);">Token Sale</h3><div class="relative"><div class="absolute inset-0 bg-green-400 blur-xl" style="transform: none;"></div><span class="relative px-3 py-1 bg-green-500/20 backdrop-blur-sm text-green-400 text-sm font-medium rounded-full flex items-center gap-1 border border-green-500/30"><div class="w-2 h-2 bg-green-400 rounded-full" style="transform: none;"></div>Live</span></div></div><div class="space-y-3"><div class="flex justify-between items-center relative p-2 -mx-2 rounded-lg transition-colors hover:bg-white/5" style="opacity: 0; transform: translateX(-20px);"><span class="text-gray-400 flex items-center gap-2">Price</span><span class="text-white font-bold" style="transform: none;">1 NSTAR = 303.03 TDN</span></div><div class="flex justify-between items-center relative p-2 -mx-2 rounded-lg transition-colors hover:bg-white/5" style="opacity: 0; transform: translateX(-20px);"><span class="text-gray-400 flex items-center gap-2">Hard Cap</span><span class="text-white font-bold" style="transform: none;">1000000.0 NSTAR</span></div><div class="flex justify-between items-center relative p-2 -mx-2 rounded-lg transition-colors hover:bg-white/5" style="opacity: 0; transform: translateX(-20px);"><span class="text-gray-400 flex items-center gap-2">Soft Cap</span><span class="text-white font-bold" style="transform: none;">30000.0 NSTAR</span></div></div><div class="mt-6" style="opacity: 0; transform: translateY(20px);"><div class="flex justify-between text-sm mb-2"><span class="text-gray-400">Progress</span><span class="text-white font-medium flex items-center gap-2" style="transform: none;">0.0%</span></div><div class="h-3 bg-black/40 rounded-full overflow-hidden relative"><div class="h-full bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 rounded-full relative" style="width: 0px;"><div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent" style="transform: none;"></div><div class="absolute right-0 top-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full blur-xl" style="transform: none;"></div></div><div class="absolute top-1/2 -translate-y-1/2 w-px h-full bg-white/20" style="left: 25%; opacity: 0; transform: scaleY(0);"></div><div class="absolute top-1/2 -translate-y-1/2 w-px h-full bg-white/20" style="left: 50%; opacity: 0; transform: scaleY(0);"></div><div class="absolute top-1/2 -translate-y-1/2 w-px h-full bg-white/20" style="left: 75%; opacity: 0; transform: scaleY(0);"></div></div></div></div></div></div></div><div class="p-4 pt-2 space-y-2"><div class="mb-3"><button class="w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-black font-bold py-3 px-4 rounded-xl text-sm transition-all" tabindex="0">Buy Nova Star</button></div><div class="bg-black/30 p-2 rounded-lg flex items-center justify-between"><div class="flex items-center gap-2 flex-1 min-w-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-3.5 h-3.5 text-blue-400 flex-shrink-0" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg><p class="text-xs font-mono text-white/70 truncate">0xcA6AcB...4B005B</p></div><button class="p-1.5 hover:bg-white/10 rounded transition-all"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy w-3.5 h-3.5 text-gray-400" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="flex items-center justify-center gap-2 pt-2"><a href="https://todin.app/" class="p-2 bg-white/5 backdrop-blur-sm rounded-lg" tabindex="0" style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-4 h-4 text-white/70" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></a><a href="https://x.com/TodinOfficial" class="p-2 bg-white/5 backdrop-blur-sm rounded-lg" tabindex="0" style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-4 h-4 text-white/70" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a><a href="https://discord.gg/todin" class="p-2 bg-white/5 backdrop-blur-sm rounded-lg" tabindex="0" style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle w-4 h-4 text-white/70" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg></a><a href="https://github.com/TodinOfficial" class="p-2 bg-white/5 backdrop-blur-sm rounded-lg" tabindex="0" style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github w-4 h-4 text-white/70" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a></div></div></div><div class="hidden md:block p-8 md:p-12"><div class="relative z-10 grid lg:grid-cols-2 gap-8 items-center"><div><div class="flex items-center gap-4 mb-6" style="opacity: 1; transform: none;"><img alt="Todin" loading="lazy" width="64" height="64" decoding="async" data-nimg="1" class="rounded-2xl object-cover shadow-2xl shadow-blue-500/25" style="color: transparent;" src="token-launches_1756627029383-1756573922430_f7yvo_Todin_Logo_-_White__1_.svg"><div><h1 class="font-display text-white" style="font-size: 3.75rem; line-height: 1; letter-spacing: -0.03em; font-weight: 900;">Todin</h1><p class="text-blue-300" style="font-size: 1.125rem; margin-top: 0.25rem;">$TDN Token</p></div></div><p class="text-lg text-gray-300 mb-8 leading-relaxed" style="opacity: 1;">Todin is a Web3 price comparison and shopping rewards platform that helps users save money while earning crypto. Our vision is to make online shopping smarter and more rewarding by combining traditional e-commerce with blockchain technology. We aggregate millions of products across multiple online stores, allowing users to compare prices, track wishlists, and set price alerts. On top of that, users earn cashback in $TDN and partner tokens, which can be redeemed, swapped, or used in our Todin Shopping Pool for BTC/USDT rewards. The problem we solve is twofold: For consumers: we save them money and reward them for shopping. For brands: we provide a powerful channel for customer acquisition through affiliate integrations, data insights, and tokenized loyalty. Our goal is to become the go-to shopping platform for both Web2 and Web3 users, bridging the gap between everyday shopping and crypto adoption.</p><div class="group relative p-4 mb-6" style="opacity: 1; transform: none;"><div class="absolute inset-0 bg-gradient-to-r from-blue-400/20 via-cyan-400/20 to-indigo-400/20 blur-xl group-hover:blur-2xl transition-all duration-500 opacity-50"></div><div class="relative flex items-center gap-3 p-4 bg-black/40 backdrop-blur-xl border border-blue-500/20 rounded-xl hover:border-blue-400/40 transition-all"><div class="p-2 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-5 h-5 text-blue-400" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg></div><div class="flex-1"><p class="text-xs text-gray-400 mb-1 font-medium uppercase tracking-wider">Contract Address</p><p class="text-sm font-mono text-white/90 break-all">0xcA6AcBBF0823A3c302426F81fc1e826AD84B005B</p></div><button class="p-2.5 bg-white/5 hover:bg-white/10 rounded-lg transition-all duration-200 border border-blue-500/20 hover:border-blue-400/40"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy w-4 h-4 text-gray-400 group-hover:text-white transition-colors" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div></div><div class="flex items-center gap-3"><div class="relative"><a href="https://todin.app/" class="group relative p-3 block" tabindex="0" style="opacity: 1; transform: none;"><div class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div><div class="relative p-3 bg-black/40 backdrop-blur-xl border border-blue-500/20 rounded-xl group-hover:border-blue-400/40 transition-all hover:text-cyan-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-5 h-5" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></div><div class="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-black/90 backdrop-blur-xl border border-blue-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap"><p class="text-xs text-white font-medium">Website</p><div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-black/90 border-r border-b border-blue-500/20 rotate-45"></div></div></a></div><div class="relative"><a href="https://x.com/TodinOfficial" class="group relative p-3 block" tabindex="0" style="opacity: 1; transform: none;"><div class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div><div class="relative p-3 bg-black/40 backdrop-blur-xl border border-blue-500/20 rounded-xl group-hover:border-blue-400/40 transition-all hover:text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-5 h-5" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></div><div class="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-black/90 backdrop-blur-xl border border-blue-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap"><p class="text-xs text-white font-medium">Twitter</p><div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-black/90 border-r border-b border-blue-500/20 rotate-45"></div></div></a></div><div class="relative"><a href="https://discord.gg/todin" class="group relative p-3 block" tabindex="0" style="opacity: 1; transform: none;"><div class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div><div class="relative p-3 bg-black/40 backdrop-blur-xl border border-blue-500/20 rounded-xl group-hover:border-blue-400/40 transition-all hover:text-indigo-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle w-5 h-5" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg></div><div class="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-black/90 backdrop-blur-xl border border-blue-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap"><p class="text-xs text-white font-medium">Discord</p><div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-black/90 border-r border-b border-blue-500/20 rotate-45"></div></div></a></div><div class="relative"><a href="https://github.com/TodinOfficial" class="group relative p-3 block" tabindex="0" style="opacity: 1; transform: none;"><div class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div><div class="relative p-3 bg-black/40 backdrop-blur-xl border border-blue-500/20 rounded-xl group-hover:border-blue-400/40 transition-all hover:text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github w-5 h-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></div><div class="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-black/90 backdrop-blur-xl border border-blue-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap"><p class="text-xs text-white font-medium">GitHub</p><div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-black/90 border-r border-b border-blue-500/20 rotate-45"></div></div></a></div><div class="relative"><a href="https://todin.gitbook.io/whitepaper" class="group relative p-3 block" tabindex="0" style="opacity: 1; transform: none;"><div class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div><div class="relative p-3 bg-black/40 backdrop-blur-xl border border-blue-500/20 rounded-xl group-hover:border-blue-400/40 transition-all hover:text-purple-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-5 h-5" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg></div><div class="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-black/90 backdrop-blur-xl border border-blue-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap"><p class="text-xs text-white font-medium">Whitepaper</p><div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-black/90 border-r border-b border-blue-500/20 rotate-45"></div></div></a></div></div></div><div class="space-y-4"><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl overflow-hidden transition-all" style="opacity: 1; transform: none;"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="p-6 relative"><div class="flex items-center justify-center h-64"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader-circle w-8 h-8 animate-spin text-cyan-400" aria-hidden="true"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg></div></div></div></div></div></div></div></div></div><div class="mb-16" style="opacity: 1; transform: none;"><div class="text-center mb-12"><h2 class="text-4xl md:text-5xl font-black text-white mb-3" style="opacity: 1; transform: none;">ICO Ends In</h2><p class="text-gray-400 text-lg" style="opacity: 1;">Don't miss your chance to participate</p></div><div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto"><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl overflow-hidden transition-all" style="opacity: 1; transform: none;"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="p-6 relative"><div class="text-center"><div class="relative inline-block"><p class="text-5xl md:text-6xl font-black bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">00</p><div class="absolute inset-0 blur-3xl bg-gradient-to-b from-blue-400/20 to-purple-400/20 -z-10"></div></div><p class="text-sm text-gray-400 font-medium mt-2 uppercase tracking-wider">Days</p></div><div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-12 h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 rounded-full opacity-50 group-hover:opacity-100 group-hover:w-16 transition-all duration-300"></div></div></div><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl overflow-hidden transition-all" style="opacity: 1; transform: none;"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="p-6 relative"><div class="text-center"><div class="relative inline-block"><p class="text-5xl md:text-6xl font-black bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">00</p><div class="absolute inset-0 blur-3xl bg-gradient-to-b from-blue-400/20 to-purple-400/20 -z-10"></div></div><p class="text-sm text-gray-400 font-medium mt-2 uppercase tracking-wider">Hours</p></div><div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-12 h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 rounded-full opacity-50 group-hover:opacity-100 group-hover:w-16 transition-all duration-300"></div></div></div><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl overflow-hidden transition-all" style="opacity: 1; transform: none;"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="p-6 relative"><div class="text-center"><div class="relative inline-block"><p class="text-5xl md:text-6xl font-black bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">00</p><div class="absolute inset-0 blur-3xl bg-gradient-to-b from-blue-400/20 to-purple-400/20 -z-10"></div></div><p class="text-sm text-gray-400 font-medium mt-2 uppercase tracking-wider">Minutes</p></div><div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-12 h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 rounded-full opacity-50 group-hover:opacity-100 group-hover:w-16 transition-all duration-300"></div></div></div><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl overflow-hidden transition-all" style="opacity: 1; transform: none;"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="p-6 relative"><div class="text-center"><div class="relative inline-block"><p class="text-5xl md:text-6xl font-black bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">00</p><div class="absolute inset-0 blur-3xl bg-gradient-to-b from-blue-400/20 to-purple-400/20 -z-10"></div></div><p class="text-sm text-gray-400 font-medium mt-2 uppercase tracking-wider">Seconds</p></div><div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-12 h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 rounded-full opacity-50 group-hover:opacity-100 group-hover:w-16 transition-all duration-300"></div></div></div></div></div><div class="grid 
+    grid-cols-1 
+    md:grid-cols-2 
+    lg:grid-cols-3
+   gap-4 md:gap-6 mb-8 md:mb-16"><div style="opacity: 1; transform: none;"><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl transition-all h-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="p-6 relative"><div class="flex items-center gap-3 mb-6"><div class="relative"><div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-cyan-400 blur-lg opacity-60"></div><div class="relative w-12 h-12 bg-gradient-to-br from-blue-400 via-cyan-400 to-indigo-400 rounded-xl flex items-center justify-center shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-coins w-6 h-6 text-white" aria-hidden="true"><circle cx="8" cy="8" r="6"></circle><path d="M18.09 10.37A6 6 0 1 1 10.34 18"></path><path d="M7 6h1v4"></path><path d="m16.71 13.88.7.71-2.82 2.82"></path></svg></div></div><h3 class="text-white" style="font-size: 1.875rem; font-weight: 700;">Buy Presale Tokens</h3></div><div style="opacity: 1; transform: none;"><div class="mb-6 p-4 bg-gradient-to-br from-purple-900/20 to-pink-900/20 backdrop-blur-sm rounded-xl border border-purple-500/20"><div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 text-purple-400" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg><span class="text-sm font-medium text-purple-400">Presale Progress</span></div><span class="text-white font-bold">0.0%</span></div><div class="w-full bg-gray-700/50 rounded-full h-3 mb-3 overflow-hidden"><div class="h-full rounded-full relative overflow-hidden" style="background: linear-gradient(90deg, rgb(139, 92, 246) 0%, rgb(236, 72, 153) 100%); width: 0%;"><div class="absolute inset-0 bg-white/20 animate-shimmer"></div></div></div><div class="flex justify-between text-sm"><span class="text-gray-400">Raised: 0 NSTAR</span><span class="text-gray-400">Hard Cap: 1,000,000 NSTAR</span></div></div><div class="mb-4 p-4 bg-gradient-to-r from-orange-900/30 to-red-900/30 border border-orange-500/40 rounded-xl flex items-start gap-3"><div class="flex-shrink-0 mt-0.5"><div class="w-6 h-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert w-4 h-4 text-white" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg></div></div><div class="flex-1"><div class="flex items-center gap-2 mb-1"><span class="text-orange-400 font-semibold text-sm">NFX Staker Requirement</span><span class="px-2 py-0.5 bg-orange-500/20 text-orange-300 text-xs font-medium rounded-full">First 24 Hours</span></div><p class="text-sm text-orange-200/80 leading-relaxed">The first 24 hours of launch only NFX stakers with 1000+ $NFX can participate. Your transaction will fail if you don't meet this requirement.<span class="block mt-1 text-orange-300"><button class="underline hover:text-orange-200 transition-colors">Stake NFX tokens here</button> or wait for the public sale to begin.</span></p></div></div><div class="space-y-4 mb-6"><div><label class="text-sm text-gray-400 mb-2 block">Amount (NSTAR)</label><div class="relative"><input class="w-full px-4 py-3 bg-black/40 border rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400/50 transition-all w-full pr-24" placeholder="0.00" min="0" step="0.01" type="number" value=""><div class="absolute right-2 top-1/2 -translate-y-1/2 flex gap-1"><button class="px-2 py-1 text-xs bg-gray-700 hover:bg-gray-600 text-white rounded-md transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Half</button><button class="px-2 py-1 text-xs bg-gray-700 hover:bg-gray-600 text-white rounded-md transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Max</button></div></div><div class="flex items-center justify-between mt-1"><p class="text-xs text-gray-500">Balance: 0 NSTAR</p></div></div><div class="p-4 backdrop-blur-sm rounded-xl border bg-gradient-to-br from-purple-900/20 to-pink-900/20 border-purple-500/20"><div class="mb-4 p-3 bg-gradient-to-r from-green-900/30 to-emerald-900/30 border border-green-500/40 rounded-lg"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4 text-green-400" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg><span class="text-sm font-medium text-green-400">You will receive</span></div><div class="text-right"><div class="text-2xl font-bold text-white">0</div><div class="text-sm text-green-400 font-medium">TDN tokens</div></div></div></div><div class="flex justify-between mb-2"><span class="text-gray-400">Exchange Rate</span><span class="text-purple-400 font-medium">1 NSTAR = 303.03 TDN</span></div></div></div><button class="relative font-medium transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed overflow-hidden focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:ring-offset-2 focus:ring-offset-black bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 text-lg rounded-2xl w-full" tabindex="0"><div class="absolute inset-0 opacity-0"><div class="absolute inset-0 bg-gradient-to-r from-white/20 to-white/10"></div></div><span class="connect-wallet relative z-10">Connect Wallet to Claim</span><div class="absolute inset-0 pointer-events-none" tabindex="0"></div></button></div></div></div></div><div class="hidden md:block" style="opacity: 1; transform: none;"><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl overflow-hidden transition-all" style="opacity: 1; transform: none;"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="p-6 relative"><div class="relative z-10"><div class="flex items-center gap-3 mb-4"><div class="relative"><div class="absolute inset-0 bg-gradient-to-br from-yellow-400 to-orange-400 blur-lg opacity-60"></div><div class="relative w-12 h-12 bg-gradient-to-br from-yellow-400 via-orange-400 to-red-400 rounded-xl flex items-center justify-center shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-6 h-6 text-white" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div></div><h3 class="text-xl font-bold text-white">Buy NovaStar</h3></div><div class="space-y-4"><div class="bg-gradient-to-r from-yellow-500/10 to-orange-500/10 border border-yellow-500/20 rounded-xl p-4"><p class="text-sm text-gray-300 mb-2">NovaStar tokens are required to participate in presales and token launches on the platform.</p><div class="flex items-center gap-2 text-yellow-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg><span class="text-sm font-medium">1 NovaStar = $1 USD</span></div></div><button class="connect-wallet w-full py-4 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-black font-bold rounded-xl transition-all transform hover:scale-[1.02] shadow-lg hover:shadow-xl flex items-center justify-center gap-2" tabindex="0" style="transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="connect-wallet lucide lucide-star w-5 h-5" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>Purchase NovaStar<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button><div class="text-center"><p class="text-xs text-gray-500">Secure payment via smart contract</p></div></div></div></div></div></div><div style="opacity: 1; transform: none;"><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl overflow-hidden transition-all h-full"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="p-6 relative"><div class="flex items-center gap-3 mb-6"><div class="relative"><div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-cyan-400 blur-lg opacity-60"></div><div class="relative w-12 h-12 bg-gradient-to-br from-blue-400 via-cyan-400 to-indigo-400 rounded-xl flex items-center justify-center shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gift w-6 h-6 text-white" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"></rect><path d="M12 8v13"></path><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg></div></div><h3 class="text-2xl font-bold text-white">Claim Tokens</h3></div><div class="space-y-4 mb-6"><div class="p-4 bg-black/40 backdrop-blur-sm rounded-xl border border-blue-500/20"><div class="flex justify-between mb-3"><span class="text-gray-400">Your Contribution</span><span class="text-white font-bold">0 NSTAR</span></div><div class="pt-3 border-t border-white/10 flex justify-between"><span class="text-gray-400">Claimable TDN</span><span class="text-xl font-bold text-white">0 TDN</span></div></div><div class="flex items-center gap-2 p-3 bg-yellow-500/10 border border-yellow-500/30 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert w-4 h-4 text-yellow-400" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg><p class="text-sm text-yellow-300">Tokens will be claimable after presale is finalized</p></div></div><button disabled="" class="w-full py-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 hover:from-blue-500 hover:via-cyan-500 hover:to-indigo-500 text-white font-bold rounded-xl transition-all transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2">Claim Locked Until Presale Finalized</button></div></div></div></div><section class="
+      px-4 md:px-6 lg:px-8
+      mb-8 md:mb-16
+    "><div class="max-w-7xl mx-auto"><div class="mb-16" style="opacity: 1; transform: none;"><div class="text-center mb-8"><h2 class="text-3xl font-black text-white mb-2">Tokenomics</h2><p class="text-gray-400">Fair and transparent token distribution</p></div><div class="grid lg:grid-cols-2 gap-8"><div class="relative p-8 bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black backdrop-blur-sm border border-blue-500/20 rounded-3xl"><div class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 rounded-t-3xl"></div><div class="relative w-64 h-64 mx-auto"><svg class="w-full h-full transform -rotate-90"><path d="M 128 128 L 208 128 A 80 80 0 0 1 103.27864045000422 204.0845213036123 Z" class="fill-current bg-gradient-to-r #e779c" stroke="rgba(0,0,0,0.5)" stroke-width="2" opacity="1" style="transform: none; transform-origin: 50% 50% 0px; transform-box: fill-box;"></path><path d="M 128 128 L 103.27864045000422 204.0845213036123 A 80 80 0 0 1 51.91547869638772 152.7213595499958 Z" class="fill-current bg-gradient-to-r #94d1f9" stroke="rgba(0,0,0,0.5)" stroke-width="2" opacity="1" style="transform: none; transform-origin: 50% 50% 0px; transform-box: fill-box;"></path><path d="M 128 128 L 51.91547869638772 152.7213595499958 A 80 80 0 0 1 48 128 Z" class="fill-current bg-gradient-to-r #594231" stroke="rgba(0,0,0,0.5)" stroke-width="2" opacity="1" style="transform: none; transform-origin: 50% 50% 0px; transform-box: fill-box;"></path><path d="M 128 128 L 48 128 A 80 80 0 0 1 51.91547869638772 103.27864045000419 Z" class="fill-current bg-gradient-to-r #a2862c" stroke="rgba(0,0,0,0.5)" stroke-width="2" opacity="1" style="transform: none; transform-origin: 50% 50% 0px; transform-box: fill-box;"></path><path d="M 128 128 L 51.91547869638772 103.27864045000419 A 80 80 0 0 1 208 127.99999999999999 Z" class="fill-current bg-gradient-to-r #9ab65a" stroke="rgba(0,0,0,0.5)" stroke-width="2" opacity="1" style="transform: none; transform-origin: 50% 50% 0px; transform-box: fill-box;"></path></svg><div class="absolute inset-0 flex items-center justify-center"><div class="text-center transform rotate-90"><p class="text-3xl font-black text-white">1B</p><p class="text-sm text-gray-400">Total Supply</p></div></div></div></div><div class="space-y-4"><div class="group relative" style="opacity: 1; transform: none;"><div class="absolute inset-0 bg-gradient-to-r from-white/0 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div><div class="relative p-4 bg-black/40 backdrop-blur-sm border border-blue-500/20 rounded-2xl group-hover:border-blue-400/40 transition-all"><div class="flex items-center justify-between mb-2"><div class="flex items-center gap-3"><div class="w-4 h-4 rounded bg-gradient-to-r #e779c"></div><span class="text-white font-medium">Public Sale</span></div><span class="text-xl font-bold text-white">30%</span></div><div class="h-2 bg-black/40 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r #e779c rounded-full relative" style="width: 30%;"><div class="absolute inset-0 bg-white/20 animate-shimmer"></div></div></div></div></div><div class="group relative" style="opacity: 1; transform: none;"><div class="absolute inset-0 bg-gradient-to-r from-white/0 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div><div class="relative p-4 bg-black/40 backdrop-blur-sm border border-blue-500/20 rounded-2xl group-hover:border-blue-400/40 transition-all"><div class="flex items-center justify-between mb-2"><div class="flex items-center gap-3"><div class="w-4 h-4 rounded bg-gradient-to-r #94d1f9"></div><span class="text-white font-medium">Liquidity</span></div><span class="text-xl font-bold text-white">15%</span></div><div class="h-2 bg-black/40 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r #94d1f9 rounded-full relative" style="width: 15%;"><div class="absolute inset-0 bg-white/20 animate-shimmer"></div></div></div></div></div><div class="group relative" style="opacity: 1; transform: none;"><div class="absolute inset-0 bg-gradient-to-r from-white/0 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div><div class="relative p-4 bg-black/40 backdrop-blur-sm border border-blue-500/20 rounded-2xl group-hover:border-blue-400/40 transition-all"><div class="flex items-center justify-between mb-2"><div class="flex items-center gap-3"><div class="w-4 h-4 rounded bg-gradient-to-r #594231"></div><span class="text-white font-medium">Team</span></div><span class="text-xl font-bold text-white">5%</span></div><div class="h-2 bg-black/40 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r #594231 rounded-full relative" style="width: 5%;"><div class="absolute inset-0 bg-white/20 animate-shimmer"></div></div></div></div></div><div class="group relative" style="opacity: 1; transform: none;"><div class="absolute inset-0 bg-gradient-to-r from-white/0 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div><div class="relative p-4 bg-black/40 backdrop-blur-sm border border-blue-500/20 rounded-2xl group-hover:border-blue-400/40 transition-all"><div class="flex items-center justify-between mb-2"><div class="flex items-center gap-3"><div class="w-4 h-4 rounded bg-gradient-to-r #a2862c"></div><span class="text-white font-medium">Marketing</span></div><span class="text-xl font-bold text-white">5%</span></div><div class="h-2 bg-black/40 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r #a2862c rounded-full relative" style="width: 5%;"><div class="absolute inset-0 bg-white/20 animate-shimmer"></div></div></div></div></div><div class="group relative" style="opacity: 1; transform: none;"><div class="absolute inset-0 bg-gradient-to-r from-white/0 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div><div class="relative p-4 bg-black/40 backdrop-blur-sm border border-blue-500/20 rounded-2xl group-hover:border-blue-400/40 transition-all"><div class="flex items-center justify-between mb-2"><div class="flex items-center gap-3"><div class="w-4 h-4 rounded bg-gradient-to-r #9ab65a"></div><span class="text-white font-medium">Treasury</span></div><span class="text-xl font-bold text-white">45%</span></div><div class="h-2 bg-black/40 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r #9ab65a rounded-full relative" style="width: 45%;"><div class="absolute inset-0 bg-white/20 animate-shimmer"></div></div></div></div></div></div></div></div></div></section><section class="
+      px-4 md:px-6 lg:px-8
+      mb-8 md:mb-16
+    "><div class="max-w-7xl mx-auto"><div class="mb-16" style="opacity: 1; transform: none;"><div class="text-center mb-12"><h2 class="text-3xl font-black text-white mb-2">Roadmap</h2><p class="text-gray-400">Our journey to revolutionize DeFi</p></div><div class="relative"><div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-400 via-cyan-400 to-transparent"></div><div class="space-y-12"><div class="relative grid md:grid-cols-2 gap-8 md:text-right" style="opacity: 1; transform: none;"><div class="md:order-1"><div class="group relative"><div class="absolute inset-0 bg-gradient-to-br from-gray-600/10 to-transparent blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="relative p-6 bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black backdrop-blur-sm border rounded-2xl border-blue-500/20 group-hover:border-blue-400/40 transition-all"><div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 rounded-t-2xl"></div><div class="flex items-center gap-3 mb-4 md:justify-end"><h3 class="text-xl font-bold text-white">Phase 1</h3><span class="px-3 py-1 rounded-full text-xs font-medium bg-gray-500/20 text-gray-400">upcoming</span></div><h4 class="text-lg font-semibold text-blue-300 mb-3">The Public Launch</h4><ul class="space-y-2 md:text-right"><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">Todin Token ($TDN) Presale</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">Token Generation Event (TGE)</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">Shopping Pool™ Activation</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">CMC / CoinGecko / DexScreener Listings</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">Todin Discord Launch + Quest System</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">Todin Website (Beta)</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">Todin Mobile App (Beta)</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">Spending Rewards</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">Buybacks &amp; Burn Begins</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">First Centralized Exchange (CEX) Listing</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li></ul></div></div></div><div class="relative flex items-center justify-center md:order-2"><div class="relative w-8 h-8 rounded-full border-4 z-10 bg-gray-700 border-gray-600"></div></div></div><div class="relative grid md:grid-cols-2 gap-8 " style="opacity: 1; transform: none;"><div class="md:order-2"><div class="group relative"><div class="absolute inset-0 bg-gradient-to-br from-gray-600/10 to-transparent blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="relative p-6 bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black backdrop-blur-sm border rounded-2xl border-blue-500/20 group-hover:border-blue-400/40 transition-all"><div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 rounded-t-2xl"></div><div class="flex items-center gap-3 mb-4 "><h3 class="text-xl font-bold text-white">Phase 2</h3><span class="px-3 py-1 rounded-full text-xs font-medium bg-gray-500/20 text-gray-400">upcoming</span></div><h4 class="text-lg font-semibold text-blue-300 mb-3">Community Growth &amp; Utility Expansion</h4><ul class="space-y-2 "><li class="flex items-center gap-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><span>Shopping Pool™ Activation</span></li><li class="flex items-center gap-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><span>Todin Gift Card System Live</span></li><li class="flex items-center gap-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><span>Todin Holder Perks 1.0</span></li><li class="flex items-center gap-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><span>Free Drops &amp; Flash Deals for Holders</span></li><li class="flex items-center gap-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><span>Expansion to more EU countries &amp; US</span></li><li class="flex items-center gap-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><span>Governance Voting Begins</span></li></ul></div></div></div><div class="relative flex items-center justify-center md:order-1"><div class="relative w-8 h-8 rounded-full border-4 z-10 bg-gray-700 border-gray-600"></div></div></div><div class="relative grid md:grid-cols-2 gap-8 md:text-right" style="opacity: 1; transform: none;"><div class="md:order-1"><div class="group relative"><div class="absolute inset-0 bg-gradient-to-br from-gray-600/10 to-transparent blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="relative p-6 bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black backdrop-blur-sm border rounded-2xl border-blue-500/20 group-hover:border-blue-400/40 transition-all"><div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 rounded-t-2xl"></div><div class="flex items-center gap-3 mb-4 md:justify-end"><h3 class="text-xl font-bold text-white">Phase 3</h3><span class="px-3 py-1 rounded-full text-xs font-medium bg-gray-500/20 text-gray-400">upcoming</span></div><h4 class="text-lg font-semibold text-blue-300 mb-3">Platform &amp; Ecosystem Scaling</h4><ul class="space-y-2 md:text-right"><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">Todin Business Portal</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">Todin AI Deal Assistant</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">IRL Deals &amp; QR Shopping</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">Token-Backed Microloans for Shopping Credit</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">Polygon &amp; Solana Bridge</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li><li class="flex items-center gap-2 text-gray-300"><span class="flex-1">Loyalty NFTs (Pilot)</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0 rotate-180" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></li></ul></div></div></div><div class="relative flex items-center justify-center md:order-2"><div class="relative w-8 h-8 rounded-full border-4 z-10 bg-gray-700 border-gray-600"></div></div></div><div class="relative grid md:grid-cols-2 gap-8 " style="opacity: 1; transform: none;"><div class="md:order-2"><div class="group relative"><div class="absolute inset-0 bg-gradient-to-br from-gray-600/10 to-transparent blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="relative p-6 bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black backdrop-blur-sm border rounded-2xl border-blue-500/20 group-hover:border-blue-400/40 transition-all"><div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 rounded-t-2xl"></div><div class="flex items-center gap-3 mb-4 "><h3 class="text-xl font-bold text-white">Phase 4</h3><span class="px-3 py-1 rounded-full text-xs font-medium bg-gray-500/20 text-gray-400">upcoming</span></div><h4 class="text-lg font-semibold text-blue-300 mb-3">Building a New Retail Layer</h4><ul class="space-y-2 "><li class="flex items-center gap-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><span>TodinPay Integration (Pilot)</span></li><li class="flex items-center gap-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><span>Todin Debit Card (Research Phase)</span></li><li class="flex items-center gap-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><span>Todin Creator Network</span></li><li class="flex items-center gap-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><span>White-Label API for Shops</span></li><li class="flex items-center gap-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-blue-400 flex-shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><span>What are your ideas?</span></li></ul></div></div></div><div class="relative flex items-center justify-center md:order-1"><div class="relative w-8 h-8 rounded-full border-4 z-10 bg-gray-700 border-gray-600"></div></div></div></div></div></div></div></section><div class="mb-8 md:mb-16" style="opacity: 1; transform: none;"><h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-8">Key Features</h2><div class="grid 
+    grid-cols-1 
+    md:grid-cols-2 
+    lg:grid-cols-3
+   gap-4 md:gap-6 "><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl overflow-hidden transition-all group" style="opacity: 1; transform: none;"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="relative"><div class="p-8"><div class="relative mb-6"><div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 blur-2xl opacity-40 transition-opacity"></div><div class="relative w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-2xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-8 h-8 text-white" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg></div></div><h3 class="text-xl font-bold text-white mb-3 transition-all">Co-Founder &amp; CEO - Thomas Clocheret</h3><p class="text-gray-400 leading-relaxed">Entrepreneur, builder, and visionary behind Todin. With a background in applied informatics, a proven track record in startups, and years of experience in tech and digital marketing, Thomas leads the Todin platform from concept to execution. He combines deep e-commerce knowledge with a passion for user-centric design and crypto utility.</p><div class="absolute -bottom-px left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 transition-opacity duration-300 rounded-b-2xl"></div></div></div></div><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl overflow-hidden transition-all group" style="opacity: 1; transform: none;"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="relative"><div class="p-8"><div class="relative mb-6"><div class="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 blur-2xl opacity-40 transition-opacity"></div><div class="relative w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-2xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-8 h-8 text-white" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></div></div><h3 class="text-xl font-bold text-white mb-3 transition-all">Co-Founder &amp; CTO - Jaimy Van Audenhove</h3><p class="text-gray-400 leading-relaxed">Co-founder of Todin and the architect behind our API and backend systems. Jaimy brings sharp expertise in PHP, Azure, and scalable deployments, ensuring Todin runs fast, secure, and stable — even at scale. He's the bridge between raw data and real-time shopping insights.</p><div class="absolute -bottom-px left-0 right-0 h-1 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 transition-opacity duration-300 rounded-b-2xl"></div></div></div></div><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl overflow-hidden transition-all group" style="opacity: 1; transform: none;"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="relative"><div class="p-8"><div class="relative mb-6"><div class="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-500 blur-2xl opacity-40 transition-opacity"></div><div class="relative w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center shadow-2xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-8 h-8 text-white" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg></div></div><h3 class="text-xl font-bold text-white mb-3 transition-all">CMO &amp; Business Developer - Fabian Driesens</h3><p class="text-gray-400 leading-relaxed">Fabian drives strategic partnerships, shop onboarding, and platform growth. With a commercial mindset and a focus on Web2 opportunities, he’s connecting Todin with marketplaces, influencers, and integration partners to boost volume and utility.</p><div class="absolute -bottom-px left-0 right-0 h-1 bg-gradient-to-r from-green-500 to-emerald-500 opacity-0 transition-opacity duration-300 rounded-b-2xl"></div></div></div></div><div class="relative bg-gradient-to-br from-[#0A0E27] via-[#0F172A] to-black border border-blue-500/20 rounded-3xl overflow-hidden transition-all group" style="opacity: 1; transform: none;"><div class="h-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"></div><div class="relative"><div class="p-8"><div class="relative mb-6"><div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 blur-2xl opacity-40 transition-opacity"></div><div class="relative w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-2xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-8 h-8 text-white" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg></div></div><h3 class="text-xl font-bold text-white mb-3 transition-all">Algorithm Engineering - Gabriel D'Hondt</h3><p class="text-gray-400 leading-relaxed">Our product algorithm specialist and Azure cloud expert. Gabriel is responsible for the Product Service Application (PSA), powering our matching engine, feed ingestion, and categorization logic. His work ensures Todin remains lightning-fast and precise across millions of products.</p><div class="absolute -bottom-px left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 transition-opacity duration-300 rounded-b-2xl"></div></div></div></div></div></div></div></section></div></div><footer class="relative bg-gradient-to-br from-space-blue-dark via-black to-space-blue-dark border-t border-white/[0.05] overflow-hidden"><div class="absolute inset-0"><div class="absolute top-0 left-1/4 w-96 h-96 bg-electric-purple/10 rounded-full blur-3xl"></div><div class="absolute bottom-0 right-1/4 w-96 h-96 bg-cyber-cyan/10 rounded-full blur-3xl"></div></div><div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-12"><div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8"><div class="md:col-span-2 lg:col-span-1"><div class="mb-4 sm:mb-6" style="opacity: 0; transform: translateY(20px);"><h3 class="text-xl sm:text-2xl font-display font-light text-white mb-2 sm:mb-3">Nova <span class="font-bold bg-gradient-to-r from-electric-purple to-cyber-cyan bg-clip-text text-transparent">Launchpad</span></h3><p class="text-sm sm:text-base text-white/60 max-w-md leading-relaxed">The only launchpad that puts safety first. Launch with confidence on Cronos.</p></div><div class="space-y-2" style="opacity: 0; transform: translateY(20px);"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-3 h-3 text-emerald-400" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg><span class="text-[10px] sm:text-xs text-white/70">CertiK Audited • 5-Year Locks • KYC-Verified Projects</span></div><div class="mt-2"><a href="https://skynet.certik.com/projects/nova-fox" target="_blank" rel="noopener noreferrer" class="text-[10px] sm:text-xs text-white/50 hover:text-white/70 transition-colors inline-flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-3 h-3" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>View audit on CertiK</a></div></div></div><div class="grid grid-cols-2 gap-4 sm:gap-6" style="opacity: 0; transform: translateY(20px);"><div><h4 class="text-xs sm:text-sm font-medium text-white mb-2 sm:mb-3">Product</h4><ul class="space-y-1.5 sm:space-y-2"><li><a class="text-xs sm:text-sm text-white/60 hover:text-white transition-colors touch-none" href="https://www.novalaunch.app/submit-project">Launchpad</a></li></ul></div><div><h4 class="text-xs sm:text-sm font-medium text-white mb-2 sm:mb-3">Resources</h4><ul class="space-y-1.5 sm:space-y-2"><li><a class="text-xs sm:text-sm text-white/60 hover:text-white transition-colors touch-none" href="https://www.novalaunch.app/guidelines">Guidelines</a></li><li><a class="text-xs sm:text-sm text-white/60 hover:text-white transition-colors touch-none" href="https://www.novalaunch.app/contact">Contact</a></li><li><a class="text-xs sm:text-sm text-white/60 hover:text-white transition-colors touch-none" href="https://www.novalaunch.app/tokenomics">Tokenomics</a></li></ul></div></div></div><div class="border-t border-white/[0.05] pt-4 sm:pt-6" style="opacity: 0; transform: translateY(20px);"><div class="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4"><div class="flex items-center gap-3 sm:gap-4"><a href="https://x.com/NovaLabs_X" target="_blank" rel="noopener noreferrer" class="w-10 h-10 sm:w-8 sm:h-8 bg-white/[0.05] hover:bg-white/[0.1] rounded-full flex items-center justify-center transition-all duration-300 group touch-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-4 h-4 text-white/60 group-hover:text-white transition-colors" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a><a href="https://discord.gg/7FFCZCWzUF" target="_blank" rel="noopener noreferrer" class="w-10 h-10 sm:w-8 sm:h-8 bg-white/[0.05] hover:bg-white/[0.1] rounded-full flex items-center justify-center transition-all duration-300 group touch-none"><svg class="w-4 h-4 text-white/60 group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"></path></svg></a></div><div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-[10px] sm:text-xs text-white/40 text-center"><span class="order-2 sm:order-1">© 2025 Nova Launchpad. All rights reserved.</span><div class="flex items-center gap-3 sm:gap-4 order-1 sm:order-2"><a class="hover:text-white/60 transition-colors touch-none" href="https://www.novalaunch.app/privacy">Privacy</a><a class="hover:text-white/60 transition-colors touch-none" href="https://www.novalaunch.app/terms">Terms</a><a class="hover:text-white/60 transition-colors touch-none" href="https://www.novalaunch.app/legal">Legal</a></div></div></div></div></div></footer><div class="fixed top-4 right-4 z-50 space-y-3"></div><w3m-modal style="--local-border-bottom-mobile-radius: 0px;" data-scrapbook-adoptedstylesheets="0" data-scrapbook-shadowdom="&lt;!----&gt;"></w3m-modal><script data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", k8 = "data-scrapbook-adoptedstylesheets", k9 = /^data-scrapbook-adoptedstylesheet-(\d+)$/, k10 = "data-scrapbook-shadowdom-mode", k11 = "data-scrapbook-shadowdom-clonable", k12 = "data-scrapbook-shadowdom-delegates-focus", k13 = "data-scrapbook-shadowdom-serializable", k14 = "data-scrapbook-shadowdom-slot-assignment", k15 = "data-scrapbook-slot-assigned", k16 = "data-scrapbook-slot-index", k17 = /^scrapbook-slot-index=(\d+)$/, k18 = '/scrapbook-slot-index', d = document, r = d.documentElement, $s = !!r.attachShadow, $as = !!d.adoptedStyleSheets, $c = !!window.HTMLCanvasElement, $sa = !!d.createElement('slot').assign, sle = [], sls = [], slt = function (r) { if ($sa) { var E = r.childNodes, i, e, s, m; for (i = 0; i < E.length; i++) { e = E[i]; if (e.nodeType === 8) { s = e.nodeValue; if (m = s.match(k17)) { s = e.nextSibling; if (s.nodeType === 3) { sls[m[1]] = s; } r.removeChild(e); i--; } else if (s === k18) { r.removeChild(e); i--; } } } } }, sl = function () { var i = sle.length, j, d, e; while (i--) { d = sle[i]; e = d.elem; d = d.value.split(','); j = d.length; while (j--) { d[j] = sls[parseInt(d[j], 10)]; } try { try { e.assign.apply(e, d); } catch (ex) { if (ex.message.includes('must have a callable @@iterator')) { e.assign(d); } else { throw ex; } } } catch (ex) { console.error(ex); } } }, asl = (function (r) { var l = [], E, i, e, m, c, j; if ($as) { E = r.attributes; i = E.length; while (i--) { e = E[i]; if (!(m = e.nodeName.match(k9))) { continue; } c = l[m[1]] = new CSSStyleSheet(); r.removeAttribute(m[0]); m = e.nodeValue.split('\n\n'); j = m.length; while (j--) { try { m[j] && c.insertRule(m[j]); } catch (ex) { console.error(ex); } } } } return l; })(r), as = function (d, e) { var l, i, I; if ($as && (l = e.getAttribute(k8)) !== null) { l = l.split(',').map(i => asl[i]); d.adoptedStyleSheets = d.adoptedStyleSheets.concat(l); e.removeAttribute(k8); } }, fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s, m; while (i--) { e = E[i]; s = e.shadowRoot; if ($s && (d = e.getAttribute(k1))) { if (!s) { try { s = e.attachShadow({ mode: (m = e.getAttribute(k10)) !== null ? m : 'open', clonable: e.hasAttribute(k11), delegatesFocus: e.hasAttribute(k12), serializable: e.hasAttribute(k13), slotAssignment: (m = e.getAttribute(k14)) !== null ? m : void 0, }); s.innerHTML = d; } catch (ex) { console.error(ex); } } e.removeAttribute(k1); e.removeAttribute(k10); e.removeAttribute(k11); e.removeAttribute(k12); e.removeAttribute(k13); e.removeAttribute(k14); } if ($c && (d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if ($sa && (d = e.getAttribute(k15)) !== null) { sle.push({elem: e, value: d}); e.removeAttribute(k15); } if ($sa && (d = e.getAttribute(k16)) !== null) { sls[d] = e; e.removeAttribute(k16); } if (s) { slt(e); as(s, e); fn(s); } } }; as(d, r); fn(d); sl(); })()</script></body></html>
